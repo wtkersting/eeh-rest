@@ -1,0 +1,10 @@
+{
+  "ids": {
+    "Users": 2
+  },
+  "models": {
+    "Users": {
+      "bchase": "{\"challenges\":{},\"created\":\"2017-02-21T00:00:00.000Z\",\"credentials\":{},\"email\":\"bchase@email.com\",\"emailVerified\":true,\"id\":1,\"lastUpdated\":\"2017-02-21T00:00:00.000Z\",\"realm\":\"Asgard\",\"status\":\"awsome\",\"username\":\"bchase\"}"
+    }
+  }
+}

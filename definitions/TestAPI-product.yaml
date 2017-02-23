@@ -1,0 +1,28 @@
+product: 1.0.0
+info:
+  name: testapi
+  title: TestAPI
+  version: 1.0.0
+  description: test api
+  contact:
+    name: bryan
+    email: bechase2@ncsu.edu
+  license:
+    name: NA
+  termsOfService: NA
+apis:
+  testapi:
+    $ref: TestAPI.yaml
+visibility:
+  view:
+    type: public
+  subscribe:
+    type: authenticated
+plans:
+  default:
+    title: Default Plan
+    description: Default Plan
+    approval: false
+    rate-limit:
+      value: 100/hour
+      hard-limit: false

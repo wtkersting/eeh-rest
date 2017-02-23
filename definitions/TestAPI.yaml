@@ -1,0 +1,455 @@
+paths:
+  /Users:
+    post:
+      tags:
+        - Users
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Users.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Users'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Users'
+      deprecated: false
+    put:
+      tags:
+        - Users
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: Users.upsert__put_Users
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Users'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Users'
+      deprecated: false
+    patch:
+      tags:
+        - Users
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: Users.upsert__patch_Users
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Users'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Users'
+      deprecated: false
+    get:
+      tags:
+        - Users
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Users.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Users'
+      deprecated: false
+  /Users/replaceOrCreate:
+    post:
+      tags:
+        - Users
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Users.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Users'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Users'
+      deprecated: false
+  /Users/upsertWithWhere:
+    post:
+      tags:
+        - Users
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: Users.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Users'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Users'
+      deprecated: false
+  '/Users/{id}/exists':
+    get:
+      tags:
+        - Users
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Users.exists__get_Users_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Users/{id}':
+    head:
+      tags:
+        - Users
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Users.exists__head_Users_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - Users
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Users.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: Filter defining fields and include
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Users'
+      deprecated: false
+    delete:
+      tags:
+        - Users
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: Users.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    put:
+      tags:
+        - Users
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Users.prototype.updateAttributes__put_Users_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Users'
+        - name: id
+          in: path
+          description: Users id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Users'
+      deprecated: false
+    patch:
+      tags:
+        - Users
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Users.prototype.updateAttributes__patch_Users_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Users'
+        - name: id
+          in: path
+          description: Users id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Users'
+      deprecated: false
+  '/Users/{id}/replace':
+    post:
+      tags:
+        - Users
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: Users.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Users'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Users'
+      deprecated: false
+  /Users/findOne:
+    get:
+      tags:
+        - Users
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: Users.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Users'
+      deprecated: false
+  /Users/update:
+    post:
+      tags:
+        - Users
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: Users.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Users'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Users/count:
+    get:
+      tags:
+        - Users
+      summary: Count instances of the model matched by where from the data source.
+      operationId: Users.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+definitions:
+  Users:
+    properties:
+      challenges:
+        type: object
+      created:
+        type: string
+        format: date
+      credentials:
+        type: object
+      email:
+        type: string
+      emailVerified:
+        type: boolean
+      id:
+        type: number
+        format: double
+      lastUpdated:
+        type: string
+        format: date
+      realm:
+        type: string
+      status:
+        type: string
+      username:
+        type: string
+    required:
+      - username
+    additionalProperties: false
+  x-any:
+    properties: {}
+basePath: /api
+swagger: '2.0'
+info:
+  x-ibm-name: testapi
+  version: 1.0.0
+  title: TestAPI
+schemes:
+  - https
+host: $(catalog.host)
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  clientIdHeader:
+    type: apiKey
+    in: header
+    name: X-IBM-Client-Id
+  clientSecretHeader:
+    in: header
+    name: X-IBM-Client-Secret
+    type: apiKey
+security:
+  - clientIdHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  catalogs:
+    apic-dev:
+      properties:
+        runtime-url: $(TARGET_URL)
+    sb:
+      properties:
+        runtime-url: 'http://localhost:4001'
+  assembly:
+    execute:
+      - invoke:
+          target-url: >-
+            https://0d1bbd81-7286-47c9-9535-9507c30dafcb-bluemix.cloudant.com/chase-test/_design/Users/_view/Users
+          username: ieweatedgmandayestriblow
+          password: 4cf7078c4d11722dc4622433f6fd745ad9d64ff9
+          verb: GET
+  properties:
+    TARGET_HOST:
+      value: 'https://localhost:4001'
+      description: ''
+      encoded: false
