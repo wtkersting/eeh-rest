@@ -1,0 +1,26 @@
+{
+  "name": "iib-eventData",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "app_data_name": {
+      "type": "string",
+      "required": true
+    },
+    "app_data_type": {
+      "type": "string",
+      "required": true
+    },
+    "app_data_namespace": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

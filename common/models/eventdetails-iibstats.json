@@ -1,0 +1,46 @@
+{
+  "name": "EventDetails-IIBStats",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "event_uuid": {
+      "type": "string",
+      "required": true
+    },
+    "start_timestamp": {
+      "type": "date",
+      "required": true
+    },
+    "end_timestamp": {
+      "type": "date",
+      "required": true
+    },
+    "Broker": {
+      "type": "iib-brokerInfo",
+      "required": true
+    },
+    "Server": {
+      "type": "iib-serverInfo",
+      "required": true
+    },
+    "FlowStats": {
+      "type": "iib-flowStats",
+      "required": true
+    },
+    "NodeStats": {
+      "type": [
+        "iib-nodeStats"
+      ],
+      "id": false,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Criteria",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Timestamp": {
+      "type": "date",
+      "required": true
+    },
+    "CriteriaString": {
+      "type": "string",
+      "required": true
+    },
+    "UserEmail": {
+      "type": "string",
+      "required": true,
+      "index": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

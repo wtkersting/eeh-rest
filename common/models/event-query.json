@@ -1,0 +1,43 @@
+{
+  "name": "EventQuery",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "query_name": {
+      "type": "string",
+      "required": true
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "exc_query_name": {
+      "type": "string"
+    },
+    "global_tx_name": {
+      "type": "string"
+    },
+    "parent_tx_name": {
+      "type": "string"
+    },
+    "local_tx_name": {
+      "type": "string"
+    },
+    "event_name": {
+      "type": "string"
+    },
+    "fields": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

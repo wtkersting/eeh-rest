@@ -1,4 +1,35 @@
 paths:
+  /Apps/replaceOrCreate:
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      tags:
+        - Apps
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      parameters:
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/App'
+          description: Model instance data
+  /Apps:
+    get:
+      responses:
+        '200':
+          description: 200 OK
+      tags:
+        - Apps
+      summary: Find all instances of the model matched by filter from the data source.
+      parameters:
+        - name: filter
+          type: string
+          required: false
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
   /Users:
     post:
       tags:
@@ -374,6 +405,26 @@ paths:
                 format: double
       deprecated: false
 definitions:
+  App:
+    properties:
+      id:
+        type: integer
+        description: id
+        format: int64
+        example: 0
+      AppName:
+        type: string
+        description: Name of the app
+        example: string
+      Role:
+        type: string
+        description: Role of the app
+        example: string
+      AppID:
+        type: string
+        example: string
+        description: ID of the app
+    additionalProperties: false
   Users:
     properties:
       challenges:
@@ -404,12 +455,12 @@ definitions:
     additionalProperties: false
   x-any:
     properties: {}
-basePath: /api
+basePath: /eeh-rest-api
 swagger: '2.0'
 info:
-  x-ibm-name: testapi
-  version: 1.0.0
-  title: TestAPI
+  x-ibm-name: eeh-rest-api
+  version: 1.0.1
+  title: eeh-rest-api
 schemes:
   - https
 host: $(catalog.host)
@@ -439,17 +490,29 @@ x-ibm-configuration:
         runtime-url: $(TARGET_URL)
     sb:
       properties:
-        runtime-url: 'http://localhost:4001'
+        runtime-url: 'https://eeh-rest-node.mybluemix.net'
+        invoke-tls-profile: 'client:Loopback-client'
   assembly:
     execute:
       - invoke:
           target-url: >-
-            https://0d1bbd81-7286-47c9-9535-9507c30dafcb-bluemix.cloudant.com/chase-test/_design/Users/_view/Users
-          username: ieweatedgmandayestriblow
-          password: 4cf7078c4d11722dc4622433f6fd745ad9d64ff9
-          verb: GET
+            https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com/eeh-rest-db/
+          username: rdifirseredurchediasedee
+          password: 110ef6cd9129c1c3e12c17982f021a0d750916b0
+          verb: keep
+          cache-response: protocol
+          tls-profile: $(invoke-tls-profile)
   properties:
     TARGET_HOST:
       value: 'https://localhost:4001'
       description: ''
       encoded: false
+    runtime-url:
+      value: ''
+      description: ''
+      encoded: false
+    invoke-tls-profile:
+      value: ''
+      description: ''
+      encoded: false
+  gateway: datapower-gateway

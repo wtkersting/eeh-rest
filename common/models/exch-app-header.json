@@ -1,0 +1,27 @@
+{
+  "name": "exchAppHeader",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "header": {
+      "type": "string",
+      "id": false,
+      "required": true
+    },
+    "Parameters": {
+      "type": [
+        "exchParm"
+      ],
+      "id": false,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "iib-nodeInfo",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nodeLabel": {
+      "type": "string",
+      "required": true
+    },
+    "nodeType": {
+      "type": "string",
+      "required": true
+    },
+    "terminal": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "string"
+    },
+    "descr": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

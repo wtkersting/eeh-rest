@@ -1,0 +1,58 @@
+{
+  "name": "exch",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "catalog": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "descr": {
+      "type": "string"
+    },
+    "exc_uuid": {
+      "type": "string",
+      "required": true
+    },
+    "managed": {
+      "type": "boolean"
+    },
+    "timestamp": {
+      "type": "date",
+      "required": true
+    },
+    "version": {
+      "type": "string",
+      "required": true
+    },
+    "Application": {
+      "type": "exchApplication",
+      "required": true
+    },
+    "ExceptionDump": {
+      "type": "exchDump"
+    },
+    "ReQueue": {
+      "type": "exchReQueue"
+    },
+    "Parameters": {
+      "type": [
+        "exchParm"
+      ],
+      "id": false,
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,47 @@
+{
+  "name": "ExceptionQuery",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "AppQuery": {
+      "type": "appQuery"
+    },
+    "Catalog": {
+      "type": "catInfo"
+    },
+    "priority": {
+      "type": "number"
+    },
+    "past_hours": {
+      "type": "number"
+    },
+    "start_timestamp": {
+      "type": "date"
+    },
+    "end_timestamp": {
+      "type": "date"
+    },
+    "notification": {
+      "type": "boolean"
+    },
+    "notification_duration": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

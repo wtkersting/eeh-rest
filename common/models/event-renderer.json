@@ -1,0 +1,26 @@
+{
+  "name": "eventRenderer",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "web_renderer": {
+      "type": "string",
+      "required": false
+    },
+    "mobile_renderer": {
+      "type": "string",
+      "required": false
+    },
+    "eclipse_renderer": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

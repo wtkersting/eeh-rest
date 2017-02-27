@@ -1,0 +1,43 @@
+{
+  "name": "appQuery",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "appids": {
+      "type": [
+        "string"
+      ]
+    },
+    "headers": {
+      "type": [
+        "string"
+      ]
+    },
+    "hostname": {
+      "type": "string"
+    },
+    "server_cluster": {
+      "type": "string"
+    },
+    "server": {
+      "type": "string"
+    },
+    "container": {
+      "type": "string"
+    },
+    "class": {
+      "type": "string"
+    },
+    "function": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

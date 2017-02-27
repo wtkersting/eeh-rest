@@ -1,0 +1,73 @@
+{
+  "name": "exchApplication",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "hostname": {
+      "type": "string",
+      "required": true
+    },
+    "appid": {
+      "type": "string",
+      "required": true
+    },
+    "class": {
+      "type": "string",
+      "required": true
+    },
+    "function": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "type": "string",
+      "required": true
+    },
+    "line": {
+      "type": "string",
+      "required": true
+    },
+    "server_cluster": {
+      "type": "string"
+    },
+    "server": {
+      "type": "string"
+    },
+    "container": {
+      "type": "string"
+    },
+    "application": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "descr": {
+      "type": "string"
+    },
+    "CallStack": {
+      "type": [
+        "exchStack"
+      ],
+      "required": true
+    },
+    "ExceptionStack": {
+      "type": [
+        "exchStack"
+      ]
+    },
+    "Headers": {
+      "type": [
+        "exchAppHeader"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,97 @@
+{
+  "name": "mqmd",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "report": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "required": true
+    },
+    "msgType": {
+      "type": "string"
+    },
+    "expiry": {
+      "type": "string"
+    },
+    "feedback": {
+      "type": "string"
+    },
+    "encoding": {
+      "type": "string"
+    },
+    "ccsid": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string"
+    },
+    "persistence": {
+      "type": "string"
+    },
+    "msgId": {
+      "type": "string"
+    },
+    "corrId": {
+      "type": "string"
+    },
+    "boCount": {
+      "type": "string"
+    },
+    "replyQ": {
+      "type": "string"
+    },
+    "replyQMgr": {
+      "type": "string"
+    },
+    "user": {
+      "type": "string"
+    },
+    "accToken": {
+      "type": "string"
+    },
+    "appid": {
+      "type": "string"
+    },
+    "appType": {
+      "type": "string"
+    },
+    "application": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "appOrigin": {
+      "type": "string"
+    },
+    "grpId": {
+      "type": "string"
+    },
+    "seqno": {
+      "type": "string"
+    },
+    "offset": {
+      "type": "string"
+    },
+    "msgFlags": {
+      "type": "string"
+    },
+    "msgLen": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

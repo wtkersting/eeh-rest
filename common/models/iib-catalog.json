@@ -1,0 +1,31 @@
+{
+  "name": "iib-Catalog",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Broker": {
+      "type": "iib-brokerInfo",
+      "required": true
+    },
+    "Server": {
+      "type": "iib-serverInfo",
+      "required": true
+    },
+    "Flow": {
+      "type": "iib-flowInfo",
+      "required": true
+    },
+    "Node": {
+      "type": "iib-nodeInfo",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

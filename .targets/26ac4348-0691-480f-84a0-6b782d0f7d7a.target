@@ -1,0 +1,77 @@
+type: bluemix
+server:
+  displayName: US South
+  name: us-south
+  host: us.apiconnect.ibmcloud.com
+org:
+  id: 583d93fc0cf28409bb7b2531
+  name: ncsu-sr-design-proj-4-eeh-rest-security-api
+  displayName: NCSU Sr. Design Proj. 4 (EEH REST Security API)
+  orgType: apiProvider
+  status: active
+  advPortalOverride: true
+  extUaaAuthenticated: false
+  requiresSSLClientCertCheck: false
+  dormant: false
+  url: 'https://us.apiconnect.ibmcloud.com/v1/orgs/583d93fc0cf28409bb7b2531'
+  externalOrgId: 3beec49c-9491-4bbf-85cb-88cba6e3f4bd
+  externalInviteOverride: 'https://new-console.ng.bluemix.net/apis/catalog/invitation'
+  externalSpaceId: 3beec49c-9491-4bbf-85cb-88cba6e3f4bd
+  externalNativeOrgId: f4c873b2-a9c1-47ac-87b3-67756a77c0fa
+catalog:
+  id: 583d93fc0cf28409bb7b253d
+  orgId: 583d93fc0cf28409bb7b2531
+  name: Sandbox
+  shortName: sb
+  owner:
+    id: 5808dd970cf2ca5933a9d6ae
+    username: moconno2@ncsu.edu
+    context: apimanager
+    idpId: 58341db4e63b1219f0f068d1
+    email: moconno2@ncsu.edu
+    firstName: moconno2@ncsu.edu
+    lastName: ''
+    status: ACTIVE
+    url: 'https://us.apiconnect.ibmcloud.com/v1/users/5808dd970cf2ca5933a9d6ae'
+  apiCenter: false
+  baseUrl: >-
+    https://api.us.apiconnect.ibmcloud.com/ncsu-sr-design-proj-4-eeh-rest-security-api/sb
+  portalType: BASIC
+  portalUrl: >-
+    https://developer.us.apiconnect.ibmcloud.com/ncsu-sr-design-proj-4-eeh-rest-security-api/sb
+  advPortalUrl: >-
+    https://sb-ncsu-sr-design-proj-4-eeh-rest-security-api.developer.us.apiconnect.ibmcloud.com
+  gatewayType: DataPowerGateway
+  idp: 583d93fd0cf28409bb7b253e
+  idps:
+    - 583d93fd0cf28409bb7b253e
+  availableRoles:
+    - developer
+    - viewer
+  default: false
+  autoDeploy: true
+  gatewayClusterUrl: /gatewayClusters/PRODAPIC_APIMGMT_GATEWAY
+  restrictedDeployment: false
+  invitationEnabled: true
+  selfSignUpEnabled: true
+  spaceEnabled: false
+  spaceIds:
+    - 583d93fd0cf28409bb7b2546
+  testAppEnabled: true
+  testAppCredentials:
+    clientId: 9d16b36b-88b6-409e-88f6-2aa4c192c236
+    clientSecret: vO2tY0qN3tM4pC2aR1jT1qX5kF7jB6pG0uJ6oX5tC3cY6wE4dF
+  createdAt: '2016-11-29T14:43:09.126+0000'
+  updatedAt: '2016-11-29T14:43:09.126+0000'
+  createdBy: apim-ops@wwpdl.vnet.ibm.com
+  updatedBy: apim-ops@wwpdl.vnet.ibm.com
+  url: >-
+    https://us.apiconnect.ibmcloud.com/v1/orgs/583d93fc0cf28409bb7b2531/environments/583d93fc0cf28409bb7b253d
+  productDeploymentApprovalRequiredStates: []
+  orgName: ncsu-sr-design-proj-4-eeh-rest-security-api
+space:
+  none: true
+app:
+  none: true
+id: 26ac4348-0691-480f-84a0-6b782d0f7d7a
+target: 1.0.0

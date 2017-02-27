@@ -1,0 +1,62 @@
+{
+  "name": "iib-nodeStats",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Node": {
+      "type": "iib-nodeInfo",
+      "required": true
+    },
+    "total_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
+    "max_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
+    "min_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
+    "total_cpu_time": {
+      "type": "string",
+      "required": true
+    },
+    "max_cpu_time": {
+      "type": "string",
+      "required": true
+    },
+    "min_cpu_time": {
+      "type": "string",
+      "required": true
+    },
+    "invocations": {
+      "type": "string",
+      "required": true
+    },
+    "term_input_count": {
+      "type": "string",
+      "required": true
+    },
+    "term_output_count": {
+      "type": "string",
+      "required": true
+    },
+    "TerminalStats": {
+      "type": [
+        "iib-terminalStats"
+      ],
+      "id": false,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

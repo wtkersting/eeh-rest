@@ -1,0 +1,27 @@
+{
+  "name": "iib-terminalStats",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "term_label": {
+      "type": "string",
+      "required": true
+    },
+    "term_type": {
+      "type": "string",
+      "required": true
+    },
+    "invocations": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

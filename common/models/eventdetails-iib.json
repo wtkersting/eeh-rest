@@ -1,0 +1,84 @@
+{
+  "name": "EventDetails-IIB",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "event_uuid": {
+      "type": "string",
+      "required": true
+    },
+    "exc_uuid": {
+      "type": "string",
+      "required": false
+    },
+    "priority": {
+      "type": "string",
+      "required": true
+    },
+    "global_txid": {
+      "type": "string"
+    },
+    "parent_txid": {
+      "type": "string"
+    },
+    "local_txid": {
+      "type": "string"
+    },
+    "event_timestamp": {
+      "type": "date",
+      "required": true
+    },
+    "event_counter": {
+      "type": "string",
+      "required": true
+    },
+    "event_name": {
+      "type": "string",
+      "required": true
+    },
+    "event_source": {
+      "type": "string",
+      "required": true
+    },
+    "app_name": {
+      "type": "string"
+    },
+    "app_uuid": {
+      "type": "string"
+    },
+    "lib_name": {
+      "type": "string"
+    },
+    "lib_uuid": {
+      "type": "string"
+    },
+    "product_version": {
+      "type": "string"
+    },
+    "event_version": {
+      "type": "string"
+    },
+    "event_data_type": {
+      "type": "string"
+    },
+    "Catalog": {
+      "type": "iib-Catalog",
+      "required": true
+    },
+    "AppData": {
+      "type": [
+        "iib-eventData"
+      ],
+      "id": false,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

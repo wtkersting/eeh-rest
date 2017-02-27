@@ -1,0 +1,65 @@
+{
+  "name": "Event",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "event_uuid": {
+      "type": "string",
+      "required": true
+    },
+    "event_type": {
+      "type": "string",
+      "required": true
+    },
+    "exc_uuid": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "required": true
+    },
+    "event_timestamp": {
+      "type": "string",
+      "required": true
+    },
+    "global_txid": {
+      "type": "string"
+    },
+    "parent_txid": {
+      "type": "string"
+    },
+    "local_txid": {
+      "type": "string"
+    },
+    "event_counter": {
+      "type": "string"
+    },
+    "global_tx_name": {
+      "type": "string"
+    },
+    "parent_tx_name": {
+      "type": "string"
+    },
+    "local_tx_name": {
+      "type": "string"
+    },
+    "event_name": {
+      "type": "string"
+    },
+    "appid": {
+      "type": "string"
+    },
+    "event_renderer": {
+      "type": "eventRenderer",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

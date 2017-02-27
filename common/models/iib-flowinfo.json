@@ -1,0 +1,29 @@
+{
+  "name": "iib-flowInfo",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "threadId": {
+      "type": "string",
+      "required": true
+    },
+    "uuid": {
+      "type": "string"
+    },
+    "descr": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

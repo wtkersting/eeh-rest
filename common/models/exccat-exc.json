@@ -1,0 +1,36 @@
+{
+  "name": "exccatExc",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "priority": {
+      "type": "number",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "descr": {
+      "type": "string",
+      "required": true
+    },
+    "Parameters": {
+      "type": [
+        "exccatExcParm"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

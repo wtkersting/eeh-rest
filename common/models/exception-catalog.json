@@ -1,0 +1,45 @@
+{
+  "name": "ExceptionCatalog",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "version": {
+      "type": "string",
+      "required": true
+    },
+    "expiry": {
+      "type": "number",
+      "required": true
+    },
+    "expiredQueue": {
+      "type": "string",
+      "required": true
+    },
+    "appid": {
+      "type": "string",
+      "required": true
+    },
+    "descr": {
+      "type": "string",
+      "required": true
+    },
+    "Exceptions": {
+      "type": [
+        "exccatExc"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

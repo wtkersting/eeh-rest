@@ -1,0 +1,51 @@
+{
+  "name": "iib-threadStats",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "threadId": {
+      "type": "string",
+      "required": true
+    },
+    "total_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
+    "total_cpu_time": {
+      "type": "string",
+      "required": true
+    },
+    "input_wait_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
+    "input_wait_cpu_time": {
+      "type": "string",
+      "required": true
+    },
+    "input_msg_no": {
+      "type": "string",
+      "required": true
+    },
+    "input_msg_total_size": {
+      "type": "string",
+      "required": true
+    },
+    "input_msg_max_size": {
+      "type": "string",
+      "required": true
+    },
+    "input_msg_min_size": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

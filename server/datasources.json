@@ -4,5 +4,14 @@
     "localStorage": "",
     "file": "db/memdb.json",
     "connector": "memory"
+  },
+  "eeh-rest-db": {
+    "url": "https://rdifirseredurchediasedee:110ef6cd9129c1c3e12c17982f021a0d750916b0@01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com",
+    "database": "eeh-rest-db",
+    "username": "wtkersti@ncsu.edu",
+    "password": "Blitzen1",
+    "name": "eeh-rest-db",
+    "modelIndex": "",
+    "connector": "cloudant"
   }
 }

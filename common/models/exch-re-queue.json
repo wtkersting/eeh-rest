@@ -1,0 +1,30 @@
+{
+  "name": "exchReQueue",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "env": {
+      "type": "string",
+      "required": true
+    },
+    "qmgr": {
+      "type": "string",
+      "required": true
+    },
+    "queue": {
+      "type": "string",
+      "required": true
+    },
+    "MQMD": {
+      "type": "mqmd"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

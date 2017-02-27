@@ -1,0 +1,49 @@
+{
+  "name": "ExceptionDetails",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "exc_uuid": {
+      "type": "string",
+      "required": true
+    },
+    "timestamp": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "descr": {
+      "type": "string",
+      "required": true
+    },
+    "Catalog": {
+      "type": "catInfo"
+    },
+    "Parameters": {
+      "type": [
+        "exchParm"
+      ],
+      "id": false,
+      "required": false
+    },
+    "Application": {
+      "type": "appInfo",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

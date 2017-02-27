@@ -1,8 +1,8 @@
 product: 1.0.0
 info:
-  name: testapi
-  title: TestAPI
-  version: 1.0.0
+  name: eeh-rest
+  title: eeh-rest
+  version: 1.0.1
   description: test api
   contact:
     name: bryan
@@ -11,7 +11,7 @@ info:
     name: NA
   termsOfService: NA
 apis:
-  testapi:
+  eeh-rest-api:
     $ref: TestAPI.yaml
 visibility:
   view:
