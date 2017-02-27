@@ -6,12 +6,21 @@
     "connector": "memory"
   },
   "eeh-rest-db": {
-    "url": "https://rdifirseredurchediasedee:110ef6cd9129c1c3e12c17982f021a0d750916b0@01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com",
+    "url": "https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix:1174937d7c5eb7619c4ab4afd7f462607dc3c4f92862dfc08b3fe6436f8b95fd@01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com",
     "database": "eeh-rest-db",
     "username": "wtkersti@ncsu.edu",
     "password": "Blitzen1",
     "name": "eeh-rest-db",
     "modelIndex": "",
+    "connector": "cloudant",
+    "user": "wtkersti@ncsu.edu"
+  },
+  "test-cloudant-db": {
+    "url": "https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix:1174937d7c5eb7619c4ab4afd7f462607dc3c4f92862dfc08b3fe6436f8b95fd@01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com",
+    "database": "",
+    "username": "wtkersti@ncsu.edu",
+    "password": "Blitzen1",
+    "name": "test-cloudant-db",
     "connector": "cloudant"
   }
 }

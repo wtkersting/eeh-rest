@@ -1,35 +1,4 @@
 paths:
-  /Apps/replaceOrCreate:
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      tags:
-        - Apps
-      summary: >-
-        Replace an existing model instance or insert a new one into the data
-        source.
-      parameters:
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/App'
-          description: Model instance data
-  /Apps:
-    get:
-      responses:
-        '200':
-          description: 200 OK
-      tags:
-        - Apps
-      summary: Find all instances of the model matched by filter from the data source.
-      parameters:
-        - name: filter
-          type: string
-          required: false
-          in: query
-          description: 'Filter defining fields, where, include, order, offset, and limit'
   /Users:
     post:
       tags:
@@ -405,26 +374,6 @@ paths:
                 format: double
       deprecated: false
 definitions:
-  App:
-    properties:
-      id:
-        type: integer
-        description: id
-        format: int64
-        example: 0
-      AppName:
-        type: string
-        description: Name of the app
-        example: string
-      Role:
-        type: string
-        description: Role of the app
-        example: string
-      AppID:
-        type: string
-        example: string
-        description: ID of the app
-    additionalProperties: false
   Users:
     properties:
       challenges:
@@ -455,7 +404,7 @@ definitions:
     additionalProperties: false
   x-any:
     properties: {}
-basePath: /eeh-rest-api
+basePath: /eeh-api
 swagger: '2.0'
 info:
   x-ibm-name: eeh-rest-api

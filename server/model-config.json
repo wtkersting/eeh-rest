@@ -14,7 +14,7 @@
     ]
   },
   "Users": {
-    "dataSource": "memdb",
+    "dataSource": "eeh-rest-db",
     "public": true
   }
 }
