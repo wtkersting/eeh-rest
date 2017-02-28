@@ -22,9 +22,7 @@ paths:
     put:
       tags:
         - Users
-      summary: >-
-        Patch an existing model instance or insert a new one into the data
-        source.
+      summary: Patch an existing model instance or insert a new one into the data source.
       operationId: Users.upsert__put_Users
       parameters:
         - name: data
@@ -43,9 +41,7 @@ paths:
     patch:
       tags:
         - Users
-      summary: >-
-        Patch an existing model instance or insert a new one into the data
-        source.
+      summary: Patch an existing model instance or insert a new one into the data source.
       operationId: Users.upsert__patch_Users
       parameters:
         - name: data
@@ -85,9 +81,7 @@ paths:
     post:
       tags:
         - Users
-      summary: >-
-        Replace an existing model instance or insert a new one into the data
-        source.
+      summary: Replace an existing model instance or insert a new one into the data source.
       operationId: Users.replaceOrCreate
       parameters:
         - name: data
@@ -107,9 +101,7 @@ paths:
     post:
       tags:
         - Users
-      summary: >-
-        Update an existing model instance or insert a new one into the data
-        source based on the where criteria.
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
       operationId: Users.upsertWithWhere
       parameters:
         - name: where
@@ -220,9 +212,7 @@ paths:
     put:
       tags:
         - Users
-      summary: >-
-        Patch attributes for a model instance and persist it into the data
-        source.
+      summary: Patch attributes for a model instance and persist it into the data source.
       operationId: 'Users.prototype.updateAttributes__put_Users_{id}'
       parameters:
         - name: data
@@ -247,9 +237,7 @@ paths:
     patch:
       tags:
         - Users
-      summary: >-
-        Patch attributes for a model instance and persist it into the data
-        source.
+      summary: Patch attributes for a model instance and persist it into the data source.
       operationId: 'Users.prototype.updateAttributes__patch_Users_{id}'
       parameters:
         - name: data
@@ -275,9 +263,7 @@ paths:
     post:
       tags:
         - Users
-      summary: >-
-        Replace attributes for a model instance and persist it into the data
-        source.
+      summary: Replace attributes for a model instance and persist it into the data source.
       operationId: Users.replaceById
       parameters:
         - name: id
@@ -373,6 +359,99 @@ paths:
                 type: number
                 format: double
       deprecated: false
+  /Exceptions/replaceOrCreate:
+    post:
+      tags:
+        - Exception
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: Exception.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Exception'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Exception'
+      deprecated: false
+  /Exceptions/upsertWithWhere:
+    post:
+      tags:
+        - Exception
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: Exception.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Exception'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Exception'
+      deprecated: false
+  '/Exceptions/{id}/replace':
+    post:
+      tags:
+        - Exception
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: Exception.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Exception'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Exception'
+      deprecated: false
+  /Exceptions:
+    get:
+      tags:
+        - Exception
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Exception.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Exception'
+      deprecated: false
 definitions:
   Users:
     properties:
@@ -404,7 +483,50 @@ definitions:
     additionalProperties: false
   x-any:
     properties: {}
-basePath: /eeh-api
+  Exception:
+    properties:
+      appid:
+        type: string
+      catalog:
+        type: string
+      code:
+        type: string
+      data_uuid:
+        type: string
+      descr:
+        type: string
+      exc_uuid:
+        type: string
+      priority:
+        type: number
+        format: double
+      query_name:
+        type: string
+      requeue_qmgr:
+        type: string
+      requeue_queue:
+        type: string
+      timestamp:
+        type: string
+        format: date
+      user_id:
+        type: string
+      version:
+        type: string
+      id:
+        type: string
+    required:
+      - appid
+      - catalog
+      - code
+      - data_uuid
+      - descr
+      - exc_uuid
+      - priority
+      - timestamp
+      - version
+    additionalProperties: false
+basePath: /api
 swagger: '2.0'
 info:
   x-ibm-name: eeh-rest-api
@@ -444,8 +566,7 @@ x-ibm-configuration:
   assembly:
     execute:
       - invoke:
-          target-url: >-
-            https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com/eeh-rest-db/
+          target-url: 'https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com/eeh-rest-db/'
           username: rdifirseredurchediasedee
           password: 110ef6cd9129c1c3e12c17982f021a0d750916b0
           verb: keep

@@ -16,5 +16,9 @@
   "Users": {
     "dataSource": "eeh-rest-db",
     "public": true
+  },
+  "Exception": {
+    "dataSource": "eeh-rest-db",
+    "public": true
   }
 }

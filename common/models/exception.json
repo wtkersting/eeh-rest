@@ -6,38 +6,37 @@
     "validateUpsert": true
   },
   "properties": {
-    "exc_uuid": {
+    "appid": {
       "type": "string",
-      "id": false,
       "required": true
     },
     "catalog": {
       "type": "string",
       "required": true
     },
-    "version": {
+    "code": {
       "type": "string",
+      "required": true
+    },
+    "data_uuid": {
+      "type": "string",
+      "required": true
+    },
+    "descr": {
+      "type": "string",
+      "required": true
+    },
+    "exc_uuid": {
+      "type": "string",
+      "id": false,
       "required": true
     },
     "priority": {
       "type": "number",
       "required": true
     },
-    "code": {
-      "type": "string",
-      "required": true
-    },
-    "appid": {
-      "type": "string",
-      "required": true
-    },
-    "timestamp": {
-      "type": "date",
-      "required": true
-    },
-    "data_uuid": {
-      "type": "string",
-      "required": true
+    "query_name": {
+      "type": "string"
     },
     "requeue_qmgr": {
       "type": "string"
@@ -45,15 +44,16 @@
     "requeue_queue": {
       "type": "string"
     },
-    "descr": {
-      "type": "string",
+    "timestamp": {
+      "type": "date",
       "required": true
-    },
-    "query_name": {
-      "type": "string"
     },
     "user_id": {
       "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
