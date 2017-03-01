@@ -20,5 +20,9 @@
   "Exception": {
     "dataSource": "eeh-rest-db",
     "public": true
+  },
+  "App": {
+    "dataSource": "eeh-rest-db",
+    "public": true
   }
 }

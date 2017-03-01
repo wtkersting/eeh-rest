@@ -1,4 +1,209 @@
 paths:
+  /Criteria/upsertWithWhere:
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: Criteria.upsertWithWhere
+      parameters:
+        - name: where
+          type: string
+          required: false
+          in: query
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/x-any'
+  /Criteria/replaceOrCreate:
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: Criteria.replaceOrCreate
+      parameters:
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/x-any'
+  '/Criteria/{id}/replace':
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: Critera.replaceById
+      parameters:
+        - name: id
+          type: string
+          required: true
+          in: path
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/x-any'
+  /Criteria:
+    get:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: Criteria.find
+      parameters:
+        - name: filter
+          type: string
+          required: false
+          in: query
+    patch:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: upsert__patch_Criteria
+      parameters:
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/x-any'
+    put:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: Criteria.upsert__put_Criteria
+      parameters:
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/x-any'
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: Criteria.create
+      parameters:
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/x-any'
+  /CodeNames/upsertWithWhere:
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: CodeNames.upsertWithWhere
+      parameters:
+        - name: where
+          type: string
+          required: false
+          in: query
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/x-any'
+  /CodeNames/replaceOrCreate:
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: CodeNames.replaceOrCreate
+      parameters:
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/x-any'
+  '/CodeName/{id}/replace':
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: CodeName.replaceById
+      parameters:
+        - name: id
+          type: string
+          required: true
+          in: path
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/x-any'
+  /CodeNames:
+    get:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: CodeNames.find
+      parameters:
+        - name: filter
+          type: string
+          required: false
+          in: query
+  /CatalogVersions/upsertWithWhere:
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: CatalogVersions.upsertWithWhere
+      parameters:
+        - name: where
+          type: string
+          required: false
+          in: query
+          description: criteria to match model instances
+        - name: data
+          required: false
+          in: body
+          description: An object of model property name/value pairs
+          schema:
+            $ref: '#/definitions/x-any'
+  /CatalogVersions/replaceOrCreate:
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: CatalogVersions.replaceOrCreate
+      parameters:
+        - name: data
+          required: false
+          in: body
+          schema:
+            $ref: '#/definitions/x-any'
+  '/CatalogVersions/{id}/replace':
+    post:
+      responses:
+        '200':
+          description: 200 OK
+      operationId: CatalogVersions.replaceById
+      parameters:
+        - name: id
+          type: string
+          required: true
+          in: path
+          description: Model id
+        - name: data
+          required: false
+          in: body
+          description: Model instance data
+          schema:
+            $ref: '#/definitions/x-any'
+  /CatalogVersions:
+    get:
+      responses:
+        '200':
+          description: 200 OK
+      parameters:
+        - name: filter
+          required: false
+          in: body
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          schema:
+            type: string
+      operationId: CatalogVerions.find
+      summary: Find all instances of the model matched by filter from the data source.
   /Users:
     post:
       tags:
@@ -22,7 +227,9 @@ paths:
     put:
       tags:
         - Users
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: Users.upsert__put_Users
       parameters:
         - name: data
@@ -41,7 +248,9 @@ paths:
     patch:
       tags:
         - Users
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: Users.upsert__patch_Users
       parameters:
         - name: data
@@ -81,7 +290,9 @@ paths:
     post:
       tags:
         - Users
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: Users.replaceOrCreate
       parameters:
         - name: data
@@ -101,7 +312,9 @@ paths:
     post:
       tags:
         - Users
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: Users.upsertWithWhere
       parameters:
         - name: where
@@ -212,7 +425,9 @@ paths:
     put:
       tags:
         - Users
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'Users.prototype.updateAttributes__put_Users_{id}'
       parameters:
         - name: data
@@ -237,7 +452,9 @@ paths:
     patch:
       tags:
         - Users
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'Users.prototype.updateAttributes__patch_Users_{id}'
       parameters:
         - name: data
@@ -263,7 +480,9 @@ paths:
     post:
       tags:
         - Users
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: Users.replaceById
       parameters:
         - name: id
@@ -363,7 +582,9 @@ paths:
     post:
       tags:
         - Exception
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: Exception.replaceOrCreate
       parameters:
         - name: data
@@ -383,7 +604,9 @@ paths:
     post:
       tags:
         - Exception
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: Exception.upsertWithWhere
       parameters:
         - name: where
@@ -409,7 +632,9 @@ paths:
     post:
       tags:
         - Exception
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: Exception.replaceById
       parameters:
         - name: id
@@ -451,6 +676,105 @@ paths:
             type: array
             items:
               $ref: '#/definitions/Exception'
+      deprecated: false
+  /Apps/replaceOrCreate:
+    post:
+      tags:
+        - App
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: App.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/App'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/App'
+      deprecated: false
+  /Apps/upsertWithWhere:
+    post:
+      tags:
+        - App
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: App.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/App'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/App'
+      deprecated: false
+  '/Apps/{id}/replace':
+    post:
+      tags:
+        - App
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: Apps.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/App'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/App'
+      deprecated: false
+  /Apps:
+    get:
+      tags:
+        - App
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: App.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/App'
       deprecated: false
 definitions:
   Users:
@@ -526,6 +850,21 @@ definitions:
       - timestamp
       - version
     additionalProperties: false
+  App:
+    properties:
+      AppID:
+        type: string
+      AppName:
+        type: string
+      Role:
+        type: string
+      id:
+        type: string
+    required:
+      - AppID
+      - AppName
+      - Role
+    additionalProperties: false
 basePath: /api
 swagger: '2.0'
 info:
@@ -566,7 +905,8 @@ x-ibm-configuration:
   assembly:
     execute:
       - invoke:
-          target-url: 'https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com/eeh-rest-db/'
+          target-url: >-
+            https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com/eeh-rest-db/
           username: rdifirseredurchediasedee
           password: 110ef6cd9129c1c3e12c17982f021a0d750916b0
           verb: keep
