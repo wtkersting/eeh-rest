@@ -7,6 +7,26 @@
     "validateUpsert": true
   },
   "properties": {
+    "event_name": {
+      "type": "string"
+    },
+    "exc_query_name": {
+      "type": "string"
+    },
+    "fields": {
+      "type": [
+        "string"
+      ]
+    },
+    "global_tx_name": {
+      "type": "string"
+    },
+    "local_tx_name": {
+      "type": "string"
+    },
+    "parent_tx_name": {
+      "type": "string"
+    },
     "query_name": {
       "type": "string",
       "required": true
@@ -14,26 +34,6 @@
     "user_id": {
       "type": "string",
       "required": true
-    },
-    "exc_query_name": {
-      "type": "string"
-    },
-    "global_tx_name": {
-      "type": "string"
-    },
-    "parent_tx_name": {
-      "type": "string"
-    },
-    "local_tx_name": {
-      "type": "string"
-    },
-    "event_name": {
-      "type": "string"
-    },
-    "fields": {
-      "type": [
-        "string"
-      ]
     }
   },
   "validations": [],

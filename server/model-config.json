@@ -48,5 +48,9 @@
   "EventDetails-IIBStats": {
     "dataSource": "eeh-rest-db",
     "public": true
+  },
+  "EventQuery": {
+    "dataSource": "eeh-rest-db",
+    "public": true
   }
 }

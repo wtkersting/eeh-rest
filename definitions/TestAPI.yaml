@@ -1160,6 +1160,175 @@ paths:
             items:
               $ref: '#/definitions/EventDetails-IIBStats'
       deprecated: false
+  /EventQueries:
+    post:
+      tags:
+        - EventQuery
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: EventQuery.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/EventQuery'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventQuery'
+      deprecated: false
+    put:
+      tags:
+        - EventQuery
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: EventQuery.upsert__put_EventQueries
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/EventQuery'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventQuery'
+      deprecated: false
+    patch:
+      tags:
+        - EventQuery
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: EventQuery.upsert__patch_EventQueries
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/EventQuery'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventQuery'
+      deprecated: false
+    get:
+      tags:
+        - EventQuery
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: EventQuery.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/EventQuery'
+      deprecated: false
+  /EventQueries/replaceOrCreate:
+    post:
+      tags:
+        - EventQuery
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: EventQuery.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/EventQuery'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventQuery'
+      deprecated: false
+  /EventQueries/upsertWithWhere:
+    post:
+      tags:
+        - EventQuery
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: EventQuery.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/EventQuery'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventQuery'
+      deprecated: false
+  '/EventQueries/{id}/replace':
+    post:
+      tags:
+        - EventQuery
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: EventQuery.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/EventQuery'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventQuery'
+      deprecated: false
+  '/EventQueries/{id}':
+    delete:
+      tags:
+        - EventQuery
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: EventQuery.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
 definitions:
   Users:
     properties:
@@ -1421,6 +1590,32 @@ definitions:
       - end_timestamp
       - event_uuid
       - start_timestamp
+    additionalProperties: false
+  EventQuery:
+    properties:
+      event_name:
+        type: string
+      exc_query_name:
+        type: string
+      fields:
+        type: array
+        items:
+          type: string
+      global_tx_name:
+        type: string
+      local_tx_name:
+        type: string
+      parent_tx_name:
+        type: string
+      query_name:
+        type: string
+      user_id:
+        type: string
+      id:
+        type: string
+    required:
+      - query_name
+      - user_id
     additionalProperties: false
 basePath: /api
 swagger: '2.0'
