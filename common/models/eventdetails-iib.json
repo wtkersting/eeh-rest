@@ -9,13 +9,13 @@
   "properties": {
     "AppData": {
       "type": [
-        "iib-eventData"
+        "object"
       ],
       "id": false,
       "required": true
     },
     "Catalog": {
-      "type": "iib-Catalog",
+      "type": "object",
       "required": true
     },
     "app_name": {

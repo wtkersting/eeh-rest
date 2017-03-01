@@ -8,22 +8,22 @@
   },
   "properties": {
     "Broker": {
-      "type": "iib-brokerInfo",
+      "type": "object",
       "required": true
     },
     "FlowStats": {
-      "type": "iib-flowStats",
+      "type": "object",
       "required": true
     },
     "NodeStats": {
       "type": [
-        "iib-nodeStats"
+        "object"
       ],
       "id": false,
       "required": true
     },
     "Server": {
-      "type": "iib-serverInfo",
+      "type": "object",
       "required": true
     },
     "end_timestamp": {
