@@ -11,15 +11,15 @@
       "type": "string",
       "required": true
     },
-    "Version": {
-      "type": "string",
-      "required": true
-    },
     "Code": {
       "type": "string",
       "required": true
     },
     "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Version": {
       "type": "string",
       "required": true
     }

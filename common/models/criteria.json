@@ -7,12 +7,12 @@
     "validateUpsert": true
   },
   "properties": {
-    "Timestamp": {
-      "type": "date",
-      "required": true
-    },
     "CriteriaString": {
       "type": "string",
+      "required": true
+    },
+    "Timestamp": {
+      "type": "date",
       "required": true
     },
     "UserEmail": {

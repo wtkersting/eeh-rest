@@ -24,5 +24,29 @@
   "App": {
     "dataSource": "eeh-rest-db",
     "public": true
+  },
+  "CatalogVersion": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "CodeName": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "Criteria": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "Event": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "EventDetails-IIB": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "EventDetails-IIBStats": {
+    "dataSource": "eeh-rest-db",
+    "public": true
   }
 }

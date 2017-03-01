@@ -1,209 +1,4 @@
 paths:
-  /Criteria/upsertWithWhere:
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: Criteria.upsertWithWhere
-      parameters:
-        - name: where
-          type: string
-          required: false
-          in: query
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/x-any'
-  /Criteria/replaceOrCreate:
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: Criteria.replaceOrCreate
-      parameters:
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/x-any'
-  '/Criteria/{id}/replace':
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: Critera.replaceById
-      parameters:
-        - name: id
-          type: string
-          required: true
-          in: path
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/x-any'
-  /Criteria:
-    get:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: Criteria.find
-      parameters:
-        - name: filter
-          type: string
-          required: false
-          in: query
-    patch:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: upsert__patch_Criteria
-      parameters:
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/x-any'
-    put:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: Criteria.upsert__put_Criteria
-      parameters:
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/x-any'
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: Criteria.create
-      parameters:
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/x-any'
-  /CodeNames/upsertWithWhere:
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: CodeNames.upsertWithWhere
-      parameters:
-        - name: where
-          type: string
-          required: false
-          in: query
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/x-any'
-  /CodeNames/replaceOrCreate:
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: CodeNames.replaceOrCreate
-      parameters:
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/x-any'
-  '/CodeName/{id}/replace':
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: CodeName.replaceById
-      parameters:
-        - name: id
-          type: string
-          required: true
-          in: path
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/x-any'
-  /CodeNames:
-    get:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: CodeNames.find
-      parameters:
-        - name: filter
-          type: string
-          required: false
-          in: query
-  /CatalogVersions/upsertWithWhere:
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: CatalogVersions.upsertWithWhere
-      parameters:
-        - name: where
-          type: string
-          required: false
-          in: query
-          description: criteria to match model instances
-        - name: data
-          required: false
-          in: body
-          description: An object of model property name/value pairs
-          schema:
-            $ref: '#/definitions/x-any'
-  /CatalogVersions/replaceOrCreate:
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: CatalogVersions.replaceOrCreate
-      parameters:
-        - name: data
-          required: false
-          in: body
-          schema:
-            $ref: '#/definitions/x-any'
-  '/CatalogVersions/{id}/replace':
-    post:
-      responses:
-        '200':
-          description: 200 OK
-      operationId: CatalogVersions.replaceById
-      parameters:
-        - name: id
-          type: string
-          required: true
-          in: path
-          description: Model id
-        - name: data
-          required: false
-          in: body
-          description: Model instance data
-          schema:
-            $ref: '#/definitions/x-any'
-  /CatalogVersions:
-    get:
-      responses:
-        '200':
-          description: 200 OK
-      parameters:
-        - name: filter
-          required: false
-          in: body
-          description: 'Filter defining fields, where, include, order, offset, and limit'
-          schema:
-            type: string
-      operationId: CatalogVerions.find
-      summary: Find all instances of the model matched by filter from the data source.
   /Users:
     post:
       tags:
@@ -227,9 +22,7 @@ paths:
     put:
       tags:
         - Users
-      summary: >-
-        Patch an existing model instance or insert a new one into the data
-        source.
+      summary: Patch an existing model instance or insert a new one into the data source.
       operationId: Users.upsert__put_Users
       parameters:
         - name: data
@@ -248,9 +41,7 @@ paths:
     patch:
       tags:
         - Users
-      summary: >-
-        Patch an existing model instance or insert a new one into the data
-        source.
+      summary: Patch an existing model instance or insert a new one into the data source.
       operationId: Users.upsert__patch_Users
       parameters:
         - name: data
@@ -290,9 +81,7 @@ paths:
     post:
       tags:
         - Users
-      summary: >-
-        Replace an existing model instance or insert a new one into the data
-        source.
+      summary: Replace an existing model instance or insert a new one into the data source.
       operationId: Users.replaceOrCreate
       parameters:
         - name: data
@@ -312,9 +101,7 @@ paths:
     post:
       tags:
         - Users
-      summary: >-
-        Update an existing model instance or insert a new one into the data
-        source based on the where criteria.
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
       operationId: Users.upsertWithWhere
       parameters:
         - name: where
@@ -425,9 +212,7 @@ paths:
     put:
       tags:
         - Users
-      summary: >-
-        Patch attributes for a model instance and persist it into the data
-        source.
+      summary: Patch attributes for a model instance and persist it into the data source.
       operationId: 'Users.prototype.updateAttributes__put_Users_{id}'
       parameters:
         - name: data
@@ -452,9 +237,7 @@ paths:
     patch:
       tags:
         - Users
-      summary: >-
-        Patch attributes for a model instance and persist it into the data
-        source.
+      summary: Patch attributes for a model instance and persist it into the data source.
       operationId: 'Users.prototype.updateAttributes__patch_Users_{id}'
       parameters:
         - name: data
@@ -480,9 +263,7 @@ paths:
     post:
       tags:
         - Users
-      summary: >-
-        Replace attributes for a model instance and persist it into the data
-        source.
+      summary: Replace attributes for a model instance and persist it into the data source.
       operationId: Users.replaceById
       parameters:
         - name: id
@@ -582,9 +363,7 @@ paths:
     post:
       tags:
         - Exception
-      summary: >-
-        Replace an existing model instance or insert a new one into the data
-        source.
+      summary: Replace an existing model instance or insert a new one into the data source.
       operationId: Exception.replaceOrCreate
       parameters:
         - name: data
@@ -604,9 +383,7 @@ paths:
     post:
       tags:
         - Exception
-      summary: >-
-        Update an existing model instance or insert a new one into the data
-        source based on the where criteria.
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
       operationId: Exception.upsertWithWhere
       parameters:
         - name: where
@@ -632,9 +409,7 @@ paths:
     post:
       tags:
         - Exception
-      summary: >-
-        Replace attributes for a model instance and persist it into the data
-        source.
+      summary: Replace attributes for a model instance and persist it into the data source.
       operationId: Exception.replaceById
       parameters:
         - name: id
@@ -681,9 +456,7 @@ paths:
     post:
       tags:
         - App
-      summary: >-
-        Replace an existing model instance or insert a new one into the data
-        source.
+      summary: Replace an existing model instance or insert a new one into the data source.
       operationId: App.replaceOrCreate
       parameters:
         - name: data
@@ -703,9 +476,7 @@ paths:
     post:
       tags:
         - App
-      summary: >-
-        Update an existing model instance or insert a new one into the data
-        source based on the where criteria.
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
       operationId: App.upsertWithWhere
       parameters:
         - name: where
@@ -731,10 +502,8 @@ paths:
     post:
       tags:
         - App
-      summary: >-
-        Replace attributes for a model instance and persist it into the data
-        source.
-      operationId: Apps.replaceById
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: App.replaceById
       parameters:
         - name: id
           in: path
@@ -775,6 +544,621 @@ paths:
             type: array
             items:
               $ref: '#/definitions/App'
+      deprecated: false
+  /CatalogVersions/replaceOrCreate:
+    post:
+      tags:
+        - CatalogVersion
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: CatalogVersion.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/CatalogVersion'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/CatalogVersion'
+      deprecated: false
+  /CatalogVersions/upsertWithWhere:
+    post:
+      tags:
+        - CatalogVersion
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: CatalogVersion.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/CatalogVersion'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/CatalogVersion'
+      deprecated: false
+  '/CatalogVersions/{id}/replace':
+    post:
+      tags:
+        - CatalogVersion
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: CatalogVersion.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/CatalogVersion'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/CatalogVersion'
+      deprecated: false
+  /CatalogVersions:
+    get:
+      tags:
+        - CatalogVersion
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: CatalogVersion.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/CatalogVersion'
+      deprecated: false
+  /CodeNames/replaceOrCreate:
+    post:
+      tags:
+        - CodeName
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: CodeName.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/CodeName'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/CodeName'
+      deprecated: false
+  /CodeNames/upsertWithWhere:
+    post:
+      tags:
+        - CodeName
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: CodeName.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/CodeName'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/CodeName'
+      deprecated: false
+  '/CodeNames/{id}/replace':
+    post:
+      tags:
+        - CodeName
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: CodeName.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/CodeName'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/CodeName'
+      deprecated: false
+  /CodeNames:
+    get:
+      tags:
+        - CodeName
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: CodeName.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/CodeName'
+      deprecated: false
+  /Criteria:
+    post:
+      tags:
+        - Criteria
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Criteria.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Criteria'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Criteria'
+      deprecated: false
+    put:
+      tags:
+        - Criteria
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: Criteria.upsert__put_Criteria
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Criteria'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Criteria'
+      deprecated: false
+    patch:
+      tags:
+        - Criteria
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: Criteria.upsert__patch_Criteria
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Criteria'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Criteria'
+      deprecated: false
+    get:
+      tags:
+        - Criteria
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Criteria.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Criteria'
+      deprecated: false
+  /Criteria/replaceOrCreate:
+    post:
+      tags:
+        - Criteria
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: Criteria.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Criteria'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Criteria'
+      deprecated: false
+  /Criteria/upsertWithWhere:
+    post:
+      tags:
+        - Criteria
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: Criteria.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Criteria'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Criteria'
+      deprecated: false
+  '/Criteria/{id}/replace':
+    post:
+      tags:
+        - Criteria
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: Criteria.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Criteria'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Criteria'
+      deprecated: false
+  /Events/replaceOrCreate:
+    post:
+      tags:
+        - Event
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: Event.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Event'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Event'
+      deprecated: false
+  /Events/upsertWithWhere:
+    post:
+      tags:
+        - Event
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: Event.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Event'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Event'
+      deprecated: false
+  '/Events/{id}/replace':
+    post:
+      tags:
+        - Event
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: Event.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Event'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Event'
+      deprecated: false
+  /Events:
+    get:
+      tags:
+        - Event
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Event.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Event'
+      deprecated: false
+  /EventDetails-IIBs/replaceOrCreate:
+    post:
+      tags:
+        - EventDetails-IIB
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: EventDetails-IIB.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/EventDetails-IIB'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventDetails-IIB'
+      deprecated: false
+  /EventDetails-IIBs/upsertWithWhere:
+    post:
+      tags:
+        - EventDetails-IIB
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: EventDetails-IIB.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/EventDetails-IIB'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventDetails-IIB'
+      deprecated: false
+  '/EventDetails-IIBs/{id}/replace':
+    post:
+      tags:
+        - EventDetails-IIB
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: EventDetails-IIB.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/EventDetails-IIB'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventDetails-IIB'
+      deprecated: false
+  /EventDetails-IIBs:
+    get:
+      tags:
+        - EventDetails-IIB
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: EventDetails-IIB.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/EventDetails-IIB'
+      deprecated: false
+  /EventDetails-IIBStats/replaceOrCreate:
+    post:
+      tags:
+        - EventDetails-IIBStats
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: EventDetails-IIBStats.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/EventDetails-IIBStats'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventDetails-IIBStats'
+      deprecated: false
+  /EventDetails-IIBStats/upsertWithWhere:
+    post:
+      tags:
+        - EventDetails-IIBStats
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: EventDetails-IIBStats.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/EventDetails-IIBStats'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventDetails-IIBStats'
+      deprecated: false
+  '/EventDetails-IIBStats/{id}/replace':
+    post:
+      tags:
+        - EventDetails-IIBStats
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: EventDetails-IIBStats.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/EventDetails-IIBStats'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/EventDetails-IIBStats'
+      deprecated: false
+  /EventDetails-IIBStats:
+    get:
+      tags:
+        - EventDetails-IIBStats
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: EventDetails-IIBStats.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/EventDetails-IIBStats'
       deprecated: false
 definitions:
   Users:
@@ -865,6 +1249,179 @@ definitions:
       - AppName
       - Role
     additionalProperties: false
+  CatalogVersion:
+    properties:
+      Catalog:
+        type: string
+      Version:
+        type: string
+      id:
+        type: string
+    required:
+      - Catalog
+      - Version
+    additionalProperties: false
+  CodeName:
+    properties:
+      Catalog:
+        type: string
+      Code:
+        type: string
+      Name:
+        type: string
+      Version:
+        type: string
+      id:
+        type: string
+    required:
+      - Catalog
+      - Code
+      - Name
+      - Version
+    additionalProperties: false
+  Criteria:
+    properties:
+      CriteriaString:
+        type: string
+      Timestamp:
+        type: string
+        format: date
+      UserEmail:
+        type: string
+      id:
+        type: string
+    required:
+      - CriteriaString
+      - Timestamp
+      - UserEmail
+    additionalProperties: false
+  Event:
+    properties:
+      appid:
+        type: string
+      event_counter:
+        type: string
+      event_name:
+        type: string
+      event_renderer:
+        $ref: '#/definitions/eventRenderer'
+      event_timestamp:
+        type: string
+      event_type:
+        type: string
+      event_uuid:
+        type: string
+      exc_uuid:
+        type: string
+      global_tx_name:
+        type: string
+      global_txid:
+        type: string
+      local_tx_name:
+        type: string
+      local_txid:
+        type: string
+      parent_tx_name:
+        type: string
+      parent_txid:
+        type: string
+      priority:
+        type: string
+      id:
+        type: string
+    required:
+      - event_renderer
+      - event_timestamp
+      - event_type
+      - event_uuid
+      - priority
+    additionalProperties: false
+  EventDetails-IIB:
+    properties:
+      AppData:
+        type: array
+        items:
+          $ref: '#/definitions/iib-eventData'
+      Catalog:
+        $ref: '#/definitions/iib-Catalog'
+      app_name:
+        type: string
+      app_uuid:
+        type: string
+      event_counter:
+        type: string
+      event_data_type:
+        type: string
+      event_name:
+        type: string
+      event_source:
+        type: string
+      event_timestamp:
+        type: string
+        format: date
+      event_uuid:
+        type: string
+      event_version:
+        type: string
+      exc_uuid:
+        type: string
+      global_txid:
+        type: string
+      lib_name:
+        type: string
+      lib_uuid:
+        type: string
+      local_txid:
+        type: string
+      parent_txid:
+        type: string
+      priority:
+        type: string
+      product_version:
+        type: string
+      id:
+        type: string
+    required:
+      - AppData
+      - Catalog
+      - event_counter
+      - event_name
+      - event_source
+      - event_timestamp
+      - event_uuid
+      - priority
+    additionalProperties: false
+  EventDetails-IIBStats:
+    properties:
+      Broker:
+        $ref: '#/definitions/iib-brokerInfo'
+      FlowStats:
+        $ref: '#/definitions/iib-flowStats'
+      NodeStats:
+        type: array
+        items:
+          $ref: '#/definitions/iib-nodeStats'
+      Server:
+        $ref: '#/definitions/iib-serverInfo'
+      end_timestamp:
+        type: string
+        format: date
+      event_uuid:
+        type: string
+      start_timestamp:
+        type: string
+        format: date
+      id:
+        type: string
+    required:
+      - Broker
+      - FlowStats
+      - NodeStats
+      - Server
+      - end_timestamp
+      - event_uuid
+      - start_timestamp
+    additionalProperties: false
 basePath: /api
 swagger: '2.0'
 info:
@@ -905,8 +1462,7 @@ x-ibm-configuration:
   assembly:
     execute:
       - invoke:
-          target-url: >-
-            https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com/eeh-rest-db/
+          target-url: 'https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com/eeh-rest-db/'
           username: rdifirseredurchediasedee
           password: 110ef6cd9129c1c3e12c17982f021a0d750916b0
           verb: keep

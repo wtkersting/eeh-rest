@@ -7,34 +7,29 @@
     "validateUpsert": true
   },
   "properties": {
-    "event_uuid": {
-      "type": "string",
+    "AppData": {
+      "type": [
+        "iib-eventData"
+      ],
+      "id": false,
       "required": true
     },
-    "exc_uuid": {
-      "type": "string",
-      "required": false
-    },
-    "priority": {
-      "type": "string",
+    "Catalog": {
+      "type": "iib-Catalog",
       "required": true
     },
-    "global_txid": {
+    "app_name": {
       "type": "string"
     },
-    "parent_txid": {
+    "app_uuid": {
       "type": "string"
-    },
-    "local_txid": {
-      "type": "string"
-    },
-    "event_timestamp": {
-      "type": "date",
-      "required": true
     },
     "event_counter": {
       "type": "string",
       "required": true
+    },
+    "event_data_type": {
+      "type": "string"
     },
     "event_name": {
       "type": "string",
@@ -44,10 +39,22 @@
       "type": "string",
       "required": true
     },
-    "app_name": {
+    "event_timestamp": {
+      "type": "date",
+      "required": true
+    },
+    "event_uuid": {
+      "type": "string",
+      "required": true
+    },
+    "event_version": {
       "type": "string"
     },
-    "app_uuid": {
+    "exc_uuid": {
+      "type": "string",
+      "required": false
+    },
+    "global_txid": {
       "type": "string"
     },
     "lib_name": {
@@ -56,25 +63,18 @@
     "lib_uuid": {
       "type": "string"
     },
+    "local_txid": {
+      "type": "string"
+    },
+    "parent_txid": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "required": true
+    },
     "product_version": {
       "type": "string"
-    },
-    "event_version": {
-      "type": "string"
-    },
-    "event_data_type": {
-      "type": "string"
-    },
-    "Catalog": {
-      "type": "iib-Catalog",
-      "required": true
-    },
-    "AppData": {
-      "type": [
-        "iib-eventData"
-      ],
-      "id": false,
-      "required": true
     }
   },
   "validations": [],

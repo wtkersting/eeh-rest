@@ -7,24 +7,8 @@
     "validateUpsert": true
   },
   "properties": {
-    "event_uuid": {
-      "type": "string",
-      "required": true
-    },
-    "start_timestamp": {
-      "type": "date",
-      "required": true
-    },
-    "end_timestamp": {
-      "type": "date",
-      "required": true
-    },
     "Broker": {
       "type": "iib-brokerInfo",
-      "required": true
-    },
-    "Server": {
-      "type": "iib-serverInfo",
       "required": true
     },
     "FlowStats": {
@@ -36,6 +20,22 @@
         "iib-nodeStats"
       ],
       "id": false,
+      "required": true
+    },
+    "Server": {
+      "type": "iib-serverInfo",
+      "required": true
+    },
+    "end_timestamp": {
+      "type": "date",
+      "required": true
+    },
+    "event_uuid": {
+      "type": "string",
+      "required": true
+    },
+    "start_timestamp": {
+      "type": "date",
       "required": true
     }
   },

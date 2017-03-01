@@ -7,11 +7,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "Version": {
+    "Catalog": {
       "type": "string",
       "required": true
     },
-    "Catalog": {
+    "Version": {
       "type": "string",
       "required": true
     }

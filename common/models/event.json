@@ -7,7 +7,20 @@
     "validateUpsert": true
   },
   "properties": {
-    "event_uuid": {
+    "appid": {
+      "type": "string"
+    },
+    "event_counter": {
+      "type": "string"
+    },
+    "event_name": {
+      "type": "string"
+    },
+    "event_renderer": {
+      "type": "eventRenderer",
+      "required": true
+    },
+    "event_timestamp": {
       "type": "string",
       "required": true
     },
@@ -15,46 +28,33 @@
       "type": "string",
       "required": true
     },
+    "event_uuid": {
+      "type": "string",
+      "required": true
+    },
     "exc_uuid": {
-      "type": "string"
-    },
-    "priority": {
-      "type": "string",
-      "required": true
-    },
-    "event_timestamp": {
-      "type": "string",
-      "required": true
-    },
-    "global_txid": {
-      "type": "string"
-    },
-    "parent_txid": {
-      "type": "string"
-    },
-    "local_txid": {
-      "type": "string"
-    },
-    "event_counter": {
       "type": "string"
     },
     "global_tx_name": {
       "type": "string"
     },
-    "parent_tx_name": {
+    "global_txid": {
       "type": "string"
     },
     "local_tx_name": {
       "type": "string"
     },
-    "event_name": {
+    "local_txid": {
       "type": "string"
     },
-    "appid": {
+    "parent_tx_name": {
       "type": "string"
     },
-    "event_renderer": {
-      "type": "eventRenderer",
+    "parent_txid": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
       "required": true
     }
   },
