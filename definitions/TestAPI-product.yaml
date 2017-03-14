@@ -19,6 +19,20 @@ visibility:
   subscribe:
     type: authenticated
 plans:
+  Platinum:
+    title: Platinum
+    apis: {}
+    description: The best plan we offer
+    approval: true
+  Golden:
+    title: Golden Plan
+    apis: {}
+    description: Our second best subscription
+    rate-limits:
+      Calls:
+        value: 30/1minute
+        hard-limit: true
+    approval: true
   default:
     title: Default Plan
     description: Default Plan
