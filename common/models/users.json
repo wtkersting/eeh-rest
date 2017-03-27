@@ -11,7 +11,7 @@
       "required": false
     },
     "created": {
-      "type": "date",
+      "type": "string",
       "required": false
     },
     "credentials": {
@@ -20,7 +20,7 @@
     },
     "email": {
       "type": "string",
-      "required": false
+      "required": true
     },
     "emailVerified": {
       "type": "boolean",
@@ -31,7 +31,7 @@
       "required": false
     },
     "lastUpdated": {
-      "type": "date",
+      "type": "string",
       "required": false
     },
     "realm": {
@@ -45,8 +45,8 @@
     },
     "username": {
       "type": "string",
-      "id": true,
-      "required": true
+      "id": false,
+      "required": false
     }
   },
   "validations": [],

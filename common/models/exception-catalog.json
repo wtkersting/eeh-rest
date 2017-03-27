@@ -7,20 +7,10 @@
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
-    "version": {
-      "type": "string",
-      "required": true
-    },
-    "expiry": {
-      "type": "number",
-      "required": true
-    },
-    "expiredQueue": {
-      "type": "string",
+    "Exceptions": {
+      "type": [
+        "object"
+      ],
       "required": true
     },
     "appid": {
@@ -31,11 +21,25 @@
       "type": "string",
       "required": true
     },
-    "Exceptions": {
-      "type": [
-        "exccatExc"
-      ],
+    "expiredQueue": {
+      "type": "string",
       "required": true
+    },
+    "expiry": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "version": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

@@ -12,6 +12,15 @@
         "string"
       ]
     },
+    "class": {
+      "type": "string"
+    },
+    "container": {
+      "type": "string"
+    },
+    "function": {
+      "type": "string"
+    },
     "headers": {
       "type": [
         "string"
@@ -20,20 +29,15 @@
     "hostname": {
       "type": "string"
     },
-    "server_cluster": {
-      "type": "string"
-    },
     "server": {
       "type": "string"
     },
-    "container": {
+    "server_cluster": {
       "type": "string"
     },
-    "class": {
-      "type": "string"
-    },
-    "function": {
-      "type": "string"
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

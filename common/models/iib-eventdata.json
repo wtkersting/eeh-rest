@@ -11,12 +11,16 @@
       "type": "string",
       "required": true
     },
+    "app_data_namespace": {
+      "type": "string"
+    },
     "app_data_type": {
       "type": "string",
       "required": true
     },
-    "app_data_namespace": {
-      "type": "string"
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

@@ -7,8 +7,8 @@
     "validateUpsert": true
   },
   "properties": {
-    "testing_01": {
-      "type": "string"
+    "TestBridge": {
+      "type": "object"
     }
   },
   "validations": [],

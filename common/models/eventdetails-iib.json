@@ -75,6 +75,10 @@
     },
     "product_version": {
       "type": "string"
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

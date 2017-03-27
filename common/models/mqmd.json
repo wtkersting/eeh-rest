@@ -7,14 +7,31 @@
     "validateUpsert": true
   },
   "properties": {
-    "report": {
+    "accToken": {
       "type": "string"
     },
-    "version": {
-      "type": "string",
-      "required": true
+    "appOrigin": {
+      "type": "string"
     },
-    "msgType": {
+    "appType": {
+      "type": "string"
+    },
+    "appid": {
+      "type": "string"
+    },
+    "application": {
+      "type": "string"
+    },
+    "boCount": {
+      "type": "string"
+    },
+    "ccsid": {
+      "type": "string"
+    },
+    "corrId": {
+      "type": "string"
+    },
+    "encoding": {
       "type": "string"
     },
     "expiry": {
@@ -23,28 +40,31 @@
     "feedback": {
       "type": "string"
     },
-    "encoding": {
-      "type": "string"
-    },
-    "ccsid": {
-      "type": "string"
-    },
     "format": {
       "type": "string"
     },
-    "priority": {
+    "grpId": {
       "type": "string"
     },
-    "persistence": {
+    "msgFlags": {
       "type": "string"
     },
     "msgId": {
       "type": "string"
     },
-    "corrId": {
+    "msgLen": {
       "type": "string"
     },
-    "boCount": {
+    "msgType": {
+      "type": "string"
+    },
+    "offset": {
+      "type": "string"
+    },
+    "persistence": {
+      "type": "string"
+    },
+    "priority": {
       "type": "string"
     },
     "replyQ": {
@@ -53,41 +73,25 @@
     "replyQMgr": {
       "type": "string"
     },
-    "user": {
-      "type": "string"
-    },
-    "accToken": {
-      "type": "string"
-    },
-    "appid": {
-      "type": "string"
-    },
-    "appType": {
-      "type": "string"
-    },
-    "application": {
-      "type": "string"
-    },
-    "timestamp": {
-      "type": "string"
-    },
-    "appOrigin": {
-      "type": "string"
-    },
-    "grpId": {
+    "report": {
       "type": "string"
     },
     "seqno": {
       "type": "string"
     },
-    "offset": {
+    "timestamp": {
       "type": "string"
     },
-    "msgFlags": {
+    "user": {
       "type": "string"
     },
-    "msgLen": {
-      "type": "string"
+    "version": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

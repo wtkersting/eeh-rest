@@ -37,6 +37,10 @@
     "start_timestamp": {
       "type": "date",
       "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

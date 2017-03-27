@@ -7,15 +7,32 @@
     "validateUpsert": true
   },
   "properties": {
-    "hostname": {
-      "type": "string",
-      "required": true
+    "Header": {
+      "type": [
+        "object"
+      ]
     },
     "appid": {
       "type": "string",
       "required": true
     },
+    "application": {
+      "type": "string"
+    },
     "class": {
+      "type": "string",
+      "required": true
+    },
+    "container": {
+      "type": "string"
+    },
+    "descr": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "file": {
       "type": "string",
       "required": true
     },
@@ -23,7 +40,7 @@
       "type": "string",
       "required": true
     },
-    "file": {
+    "hostname": {
       "type": "string",
       "required": true
     },
@@ -31,28 +48,15 @@
       "type": "string",
       "required": true
     },
-    "server_cluster": {
-      "type": "string"
-    },
     "server": {
       "type": "string"
     },
-    "container": {
+    "server_cluster": {
       "type": "string"
     },
-    "application": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "descr": {
-      "type": "string"
-    },
-    "Header": {
-      "type": [
-        "exchAppHeader"
-      ]
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

@@ -52,5 +52,121 @@
   "EventQuery": {
     "dataSource": "eeh-rest-db",
     "public": true
+  },
+  "mqmd": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "iib-threadStats": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "iib-terminalStats": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "iib-serverInfo": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "iib-nodeStats": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "iib-nodeInfo": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "iib-flowStats": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "iib-flowInfo": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "iib-eventData": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "iib-brokerInfo": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "iib-Catalog": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "exchStack": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "exchReQueue": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "exchParm": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "exchDump": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "exchApplication": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "exchAppHeader": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "exch": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "exccatExcParm": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "exccatExc": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "eventRenderer": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "catInfo": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "appQuery": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "appInfo": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "TestBridge": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "ExceptionQuery": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "ExceptionMessage": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "ExceptionDetails": {
+    "dataSource": "eeh-rest-db",
+    "public": true
+  },
+  "ExceptionCatalog": {
+    "dataSource": "eeh-rest-db",
+    "public": true
   }
 }

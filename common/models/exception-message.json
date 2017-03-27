@@ -7,7 +7,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "ExceptionHeader": {
+      "type": "object",
+      "required": true
+    },
+    "descr": {
       "type": "string",
       "required": true
     },
@@ -15,13 +19,13 @@
       "type": "string",
       "required": true
     },
-    "descr": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "ExceptionHeader": {
-      "type": "exch",
-      "required": true
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

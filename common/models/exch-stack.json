@@ -11,17 +11,21 @@
       "type": "string",
       "required": true
     },
-    "function": {
+    "file": {
       "type": "string",
       "required": true
     },
-    "file": {
+    "function": {
       "type": "string",
       "required": true
     },
     "line": {
       "type": "string",
       "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

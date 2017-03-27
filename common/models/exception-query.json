@@ -7,37 +7,41 @@
     "validateUpsert": true
   },
   "properties": {
+    "AppQuery": {
+      "type": "object"
+    },
+    "Catalog": {
+      "type": "object"
+    },
+    "end_timestamp": {
+      "type": "string"
+    },
     "name": {
       "type": "string",
       "required": true
-    },
-    "user_id": {
-      "type": "string",
-      "required": true
-    },
-    "AppQuery": {
-      "type": "appQuery"
-    },
-    "Catalog": {
-      "type": "catInfo"
-    },
-    "priority": {
-      "type": "number"
-    },
-    "past_hours": {
-      "type": "number"
-    },
-    "start_timestamp": {
-      "type": "date"
-    },
-    "end_timestamp": {
-      "type": "date"
     },
     "notification": {
       "type": "boolean"
     },
     "notification_duration": {
       "type": "number"
+    },
+    "past_hours": {
+      "type": "number"
+    },
+    "priority": {
+      "type": "number"
+    },
+    "start_timestamp": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

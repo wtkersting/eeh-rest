@@ -7,23 +7,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "threadId": {
+    "input_msg_max_size": {
       "type": "string",
       "required": true
     },
-    "total_elapsed_time": {
-      "type": "string",
-      "required": true
-    },
-    "total_cpu_time": {
-      "type": "string",
-      "required": true
-    },
-    "input_wait_elapsed_time": {
-      "type": "string",
-      "required": true
-    },
-    "input_wait_cpu_time": {
+    "input_msg_min_size": {
       "type": "string",
       "required": true
     },
@@ -35,13 +23,29 @@
       "type": "string",
       "required": true
     },
-    "input_msg_max_size": {
+    "input_wait_cpu_time": {
       "type": "string",
       "required": true
     },
-    "input_msg_min_size": {
+    "input_wait_elapsed_time": {
       "type": "string",
       "required": true
+    },
+    "threadId": {
+      "type": "string",
+      "required": true
+    },
+    "total_cpu_time": {
+      "type": "string",
+      "required": true
+    },
+    "total_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

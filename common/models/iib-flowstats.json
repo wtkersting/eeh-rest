@@ -8,62 +8,25 @@
   },
   "properties": {
     "Flow": {
-      "type": "iib-flowInfo",
+      "type": "object",
       "required": true
     },
-    "total_elapsed_time": {
+    "ThreadStats": {
+      "type": [
+        "object"
+      ],
+      "id": false,
+      "required": true
+    },
+    "accounting_origin": {
       "type": "string",
       "required": true
     },
-    "max_elapsed_time": {
+    "backout_count": {
       "type": "string",
       "required": true
     },
-    "min_elapsed_time": {
-      "type": "string",
-      "required": true
-    },
-    "total_cpu_time": {
-      "type": "string",
-      "required": true
-    },
-    "max_cpu_time": {
-      "type": "string",
-      "required": true
-    },
-    "min_cpu_time": {
-      "type": "string",
-      "required": true
-    },
-    "input_wait_elapsed_time": {
-      "type": "string",
-      "required": true
-    },
-    "input_wait_cpu_time": {
-      "type": "string",
-      "required": true
-    },
-    "input_msg_no": {
-      "type": "string",
-      "required": true
-    },
-    "input_msg_total_size": {
-      "type": "string",
-      "required": true
-    },
-    "input_msg_max_size": {
-      "type": "string",
-      "required": true
-    },
-    "input_msg_min_size": {
-      "type": "string",
-      "required": true
-    },
-    "threads_pool_size": {
-      "type": "string",
-      "required": true
-    },
-    "threads_max_reached": {
+    "commit_count": {
       "type": "string",
       "required": true
     },
@@ -79,28 +42,69 @@
       "type": "string",
       "required": true
     },
+    "input_msg_max_size": {
+      "type": "string",
+      "required": true
+    },
+    "input_msg_min_size": {
+      "type": "string",
+      "required": true
+    },
+    "input_msg_no": {
+      "type": "string",
+      "required": true
+    },
+    "input_msg_total_size": {
+      "type": "string",
+      "required": true
+    },
+    "input_wait_cpu_time": {
+      "type": "string",
+      "required": true
+    },
+    "input_wait_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
+    "max_cpu_time": {
+      "type": "string",
+      "required": true
+    },
+    "max_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
+    "min_cpu_time": {
+      "type": "string",
+      "required": true
+    },
+    "min_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
+    "threads_max_reached": {
+      "type": "string",
+      "required": true
+    },
+    "threads_pool_size": {
+      "type": "string",
+      "required": true
+    },
     "timeout_agregession": {
       "type": "string",
       "required": true
     },
-    "commit_count": {
+    "total_cpu_time": {
       "type": "string",
       "required": true
     },
-    "backout_count": {
+    "total_elapsed_time": {
       "type": "string",
       "required": true
     },
-    "accounting_origin": {
-      "type": "string",
-      "required": true
-    },
-    "ThreadStats": {
-      "type": [
-        "iib-threadStats"
-      ],
-      "id": false,
-      "required": true
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

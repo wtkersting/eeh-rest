@@ -7,16 +7,20 @@
     "validateUpsert": true
   },
   "properties": {
-    "web_renderer": {
-      "type": "string",
-      "required": false
+    "eclipse_renderer": {
+      "type": "string"
     },
     "mobile_renderer": {
       "type": "string",
       "required": false
     },
-    "eclipse_renderer": {
-      "type": "string"
+    "web_renderer": {
+      "type": "string",
+      "required": false
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

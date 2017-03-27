@@ -7,6 +7,12 @@
     "validateUpsert": true
   },
   "properties": {
+    "descr": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "string"
+    },
     "nodeLabel": {
       "type": "string",
       "required": true
@@ -18,11 +24,9 @@
     "terminal": {
       "type": "string"
     },
-    "detail": {
-      "type": "string"
-    },
-    "descr": {
-      "type": "string"
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

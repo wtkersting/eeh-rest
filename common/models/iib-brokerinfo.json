@@ -7,16 +7,20 @@
     "validateUpsert": true
   },
   "properties": {
-    "uuid": {
-      "type": "string",
-      "required": true
+    "descr": {
+      "type": "string"
     },
     "name": {
       "type": "string",
       "required": true
     },
-    "descr": {
-      "type": "string"
+    "uuid": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

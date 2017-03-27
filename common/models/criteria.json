@@ -19,6 +19,10 @@
       "type": "string",
       "required": true,
       "index": false
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

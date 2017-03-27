@@ -7,6 +7,9 @@
     "validateUpsert": true
   },
   "properties": {
+    "descr": {
+      "type": "string"
+    },
     "name": {
       "type": "string",
       "required": true
@@ -15,8 +18,9 @@
       "type": "string",
       "required": true
     },
-    "descr": {
-      "type": "string"
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

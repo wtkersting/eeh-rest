@@ -8,22 +8,17 @@
   },
   "properties": {
     "Node": {
-      "type": "iib-nodeInfo",
+      "type": "object",
       "required": true
     },
-    "total_elapsed_time": {
-      "type": "string",
+    "TerminalStats": {
+      "type": [
+        "object"
+      ],
+      "id": false,
       "required": true
     },
-    "max_elapsed_time": {
-      "type": "string",
-      "required": true
-    },
-    "min_elapsed_time": {
-      "type": "string",
-      "required": true
-    },
-    "total_cpu_time": {
+    "invocations": {
       "type": "string",
       "required": true
     },
@@ -31,11 +26,15 @@
       "type": "string",
       "required": true
     },
+    "max_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
     "min_cpu_time": {
       "type": "string",
       "required": true
     },
-    "invocations": {
+    "min_elapsed_time": {
       "type": "string",
       "required": true
     },
@@ -47,12 +46,17 @@
       "type": "string",
       "required": true
     },
-    "TerminalStats": {
-      "type": [
-        "iib-terminalStats"
-      ],
-      "id": false,
+    "total_cpu_time": {
+      "type": "string",
       "required": true
+    },
+    "total_elapsed_time": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

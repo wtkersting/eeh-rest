@@ -7,13 +7,10 @@
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
-    "priority": {
-      "type": "number",
-      "required": true
+    "Parameters": {
+      "type": [
+        "object"
+      ]
     },
     "code": {
       "type": "string",
@@ -23,10 +20,17 @@
       "type": "string",
       "required": true
     },
-    "Parameters": {
-      "type": [
-        "exccatExcParm"
-      ]
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "priority": {
+      "type": "number",
+      "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

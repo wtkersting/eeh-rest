@@ -7,6 +7,10 @@
     "validateUpsert": true
   },
   "properties": {
+    "invocations": {
+      "type": "string",
+      "required": true
+    },
     "term_label": {
       "type": "string",
       "required": true
@@ -15,9 +19,9 @@
       "type": "string",
       "required": true
     },
-    "invocations": {
-      "type": "string",
-      "required": true
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

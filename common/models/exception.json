@@ -45,7 +45,7 @@
       "type": "string"
     },
     "timestamp": {
-      "type": "date",
+      "type": "string",
       "required": true
     },
     "user_id": {
@@ -54,6 +54,10 @@
     "version": {
       "type": "string",
       "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

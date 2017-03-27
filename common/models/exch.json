@@ -7,6 +7,23 @@
     "validateUpsert": true
   },
   "properties": {
+    "Application": {
+      "type": "object",
+      "required": true
+    },
+    "ExceptionDump": {
+      "type": "object"
+    },
+    "Parameters": {
+      "type": [
+        "object"
+      ],
+      "id": false,
+      "required": false
+    },
+    "ReQueue": {
+      "type": "object"
+    },
     "catalog": {
       "type": "string",
       "required": true
@@ -33,21 +50,8 @@
       "type": "string",
       "required": true
     },
-    "Application": {
-      "type": "exchApplication",
-      "required": true
-    },
-    "ExceptionDump": {
-      "type": "exchDump"
-    },
-    "ReQueue": {
-      "type": "exchReQueue"
-    },
-    "Parameters": {
-      "type": [
-        "exchParm"
-      ],
-      "id": false,
+    "id": {
+      "type": "number",
       "required": false
     }
   },

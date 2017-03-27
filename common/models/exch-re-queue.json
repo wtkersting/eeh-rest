@@ -7,6 +7,9 @@
     "validateUpsert": true
   },
   "properties": {
+    "MQMD": {
+      "type": "object"
+    },
     "env": {
       "type": "string",
       "required": true
@@ -19,8 +22,9 @@
       "type": "string",
       "required": true
     },
-    "MQMD": {
-      "type": "mqmd"
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],

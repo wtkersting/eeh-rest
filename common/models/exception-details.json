@@ -7,19 +7,21 @@
     "validateUpsert": true
   },
   "properties": {
-    "exc_uuid": {
-      "type": "string",
+    "Application": {
+      "type": "object",
       "required": true
     },
-    "timestamp": {
-      "type": "string",
-      "required": true
+    "Catalog": {
+      "type": "object"
+    },
+    "Parameters": {
+      "type": [
+        "object"
+      ],
+      "id": false,
+      "required": false
     },
     "code": {
-      "type": "string",
-      "required": true
-    },
-    "name": {
       "type": "string",
       "required": true
     },
@@ -27,19 +29,21 @@
       "type": "string",
       "required": true
     },
-    "Catalog": {
-      "type": "catInfo"
-    },
-    "Parameters": {
-      "type": [
-        "exchParm"
-      ],
-      "id": false,
-      "required": false
-    },
-    "Application": {
-      "type": "appInfo",
+    "exc_uuid": {
+      "type": "string",
       "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "timestamp": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": false
     }
   },
   "validations": [],
