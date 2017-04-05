@@ -1,5 +1,5 @@
 {
-  "name": "TestAPI",
+  "name": "EEH REST API",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -14,7 +14,6 @@
     "loopback": "^2.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-connector-cloudant": "^1.1.0",
-    "loopback-connector-db2": "^1.0.21",
     "loopback-datasource-juggler": "^2.39.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^1.0.1"
@@ -28,6 +27,6 @@
     "type": "",
     "url": ""
   },
-  "license": "UNLICENSED",
-  "description": "TestAPI"
+  "license": "IBM",
+  "description": "EEH REST API"
 }
