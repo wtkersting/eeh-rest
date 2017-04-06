@@ -1,9 +1,9 @@
 {
   "eeh-rest-db": {
-    "url": "https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix:1174937d7c5eb7619c4ab4afd7f462607dc3c4f92862dfc08b3fe6436f8b95fd@01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com",
+    "url": "https://d540b4f8-480e-470a-bddb-cdd7c8af6024-bluemix:7ddfa734fae133eb6809bd40b994e2d721f0f28eb29cecd012789773449d235e@d540b4f8-480e-470a-bddb-cdd7c8af6024-bluemix.cloudant.com",
     "database": "eeh-rest-db",
-    "username": "wtkersti@ncsu.edu",
-    "password": "Blitzen1",
+    "username": "d540b4f8-480e-470a-bddb-cdd7c8af6024-bluemix",
+    "password": "7ddfa734fae133eb6809bd40b994e2d721f0f28eb29cecd012789773449d235e",
     "name": "eeh-rest-db",
     "modelIndex": "",
     "connector": "cloudant",
