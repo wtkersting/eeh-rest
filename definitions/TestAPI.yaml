@@ -11972,16 +11972,6 @@ x-ibm-configuration:
       properties:
         runtime-url: 'https://eeh-rest-node.mybluemix.net'
         invoke-tls-profile: 'client:Loopback-client'
-  assembly:
-    execute:
-      - invoke:
-          target-url: >-
-            https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com/eeh-rest-db/
-          username: rdifirseredurchediasedee
-          password: 110ef6cd9129c1c3e12c17982f021a0d750916b0
-          verb: keep
-          cache-response: protocol
-          tls-profile: $(invoke-tls-profile)
   properties:
     TARGET_HOST:
       value: 'https://localhost:4001'
