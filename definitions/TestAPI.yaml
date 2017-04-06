@@ -22,7 +22,9 @@ paths:
     put:
       tags:
         - Users
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: Users.upsert__put_Users
       parameters:
         - name: data
@@ -41,7 +43,9 @@ paths:
     patch:
       tags:
         - Users
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: Users.upsert__patch_Users
       parameters:
         - name: data
@@ -81,7 +85,9 @@ paths:
     post:
       tags:
         - Users
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: Users.replaceOrCreate
       parameters:
         - name: data
@@ -101,7 +107,9 @@ paths:
     post:
       tags:
         - Users
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: Users.upsertWithWhere
       parameters:
         - name: where
@@ -212,7 +220,9 @@ paths:
     put:
       tags:
         - Users
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'Users.prototype.updateAttributes__put_Users_{id}'
       parameters:
         - name: data
@@ -237,7 +247,9 @@ paths:
     patch:
       tags:
         - Users
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'Users.prototype.updateAttributes__patch_Users_{id}'
       parameters:
         - name: data
@@ -263,7 +275,9 @@ paths:
     post:
       tags:
         - Users
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: Users.replaceById
       parameters:
         - name: id
@@ -363,7 +377,9 @@ paths:
     post:
       tags:
         - Exception
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: Exception.replaceOrCreate
       parameters:
         - name: data
@@ -383,7 +399,9 @@ paths:
     post:
       tags:
         - Exception
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: Exception.upsertWithWhere
       parameters:
         - name: where
@@ -409,7 +427,9 @@ paths:
     post:
       tags:
         - Exception
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: Exception.replaceById
       parameters:
         - name: id
@@ -456,7 +476,9 @@ paths:
     post:
       tags:
         - App
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: App.replaceOrCreate
       parameters:
         - name: data
@@ -476,7 +498,9 @@ paths:
     post:
       tags:
         - App
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: App.upsertWithWhere
       parameters:
         - name: where
@@ -502,7 +526,9 @@ paths:
     post:
       tags:
         - App
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: App.replaceById
       parameters:
         - name: id
@@ -549,7 +575,9 @@ paths:
     post:
       tags:
         - CatalogVersion
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: CatalogVersion.replaceOrCreate
       parameters:
         - name: data
@@ -569,7 +597,9 @@ paths:
     post:
       tags:
         - CatalogVersion
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: CatalogVersion.upsertWithWhere
       parameters:
         - name: where
@@ -595,7 +625,9 @@ paths:
     post:
       tags:
         - CatalogVersion
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: CatalogVersion.replaceById
       parameters:
         - name: id
@@ -642,7 +674,9 @@ paths:
     post:
       tags:
         - CodeName
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: CodeName.replaceOrCreate
       parameters:
         - name: data
@@ -662,7 +696,9 @@ paths:
     post:
       tags:
         - CodeName
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: CodeName.upsertWithWhere
       parameters:
         - name: where
@@ -688,7 +724,9 @@ paths:
     post:
       tags:
         - CodeName
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: CodeName.replaceById
       parameters:
         - name: id
@@ -754,7 +792,9 @@ paths:
     put:
       tags:
         - Criteria
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: Criteria.upsert__put_Criteria
       parameters:
         - name: data
@@ -773,7 +813,9 @@ paths:
     patch:
       tags:
         - Criteria
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: Criteria.upsert__patch_Criteria
       parameters:
         - name: data
@@ -813,7 +855,9 @@ paths:
     post:
       tags:
         - Criteria
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: Criteria.replaceOrCreate
       parameters:
         - name: data
@@ -833,7 +877,9 @@ paths:
     post:
       tags:
         - Criteria
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: Criteria.upsertWithWhere
       parameters:
         - name: where
@@ -859,7 +905,9 @@ paths:
     post:
       tags:
         - Criteria
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: Criteria.replaceById
       parameters:
         - name: id
@@ -885,7 +933,9 @@ paths:
     post:
       tags:
         - Event
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: Event.replaceOrCreate
       parameters:
         - name: data
@@ -905,7 +955,9 @@ paths:
     post:
       tags:
         - Event
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: Event.upsertWithWhere
       parameters:
         - name: where
@@ -931,7 +983,9 @@ paths:
     post:
       tags:
         - Event
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: Event.replaceById
       parameters:
         - name: id
@@ -978,7 +1032,9 @@ paths:
     post:
       tags:
         - EventDetails-IIB
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: EventDetails-IIB.replaceOrCreate
       parameters:
         - name: data
@@ -998,7 +1054,9 @@ paths:
     post:
       tags:
         - EventDetails-IIB
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: EventDetails-IIB.upsertWithWhere
       parameters:
         - name: where
@@ -1024,7 +1082,9 @@ paths:
     post:
       tags:
         - EventDetails-IIB
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: EventDetails-IIB.replaceById
       parameters:
         - name: id
@@ -1071,7 +1131,9 @@ paths:
     post:
       tags:
         - EventDetails-IIBStats
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: EventDetails-IIBStats.replaceOrCreate
       parameters:
         - name: data
@@ -1091,7 +1153,9 @@ paths:
     post:
       tags:
         - EventDetails-IIBStats
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: EventDetails-IIBStats.upsertWithWhere
       parameters:
         - name: where
@@ -1117,7 +1181,9 @@ paths:
     post:
       tags:
         - EventDetails-IIBStats
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: EventDetails-IIBStats.replaceById
       parameters:
         - name: id
@@ -1183,7 +1249,9 @@ paths:
     put:
       tags:
         - EventQuery
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: EventQuery.upsert__put_EventQueries
       parameters:
         - name: data
@@ -1202,7 +1270,9 @@ paths:
     patch:
       tags:
         - EventQuery
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: EventQuery.upsert__patch_EventQueries
       parameters:
         - name: data
@@ -1242,7 +1312,9 @@ paths:
     post:
       tags:
         - EventQuery
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: EventQuery.replaceOrCreate
       parameters:
         - name: data
@@ -1262,7 +1334,9 @@ paths:
     post:
       tags:
         - EventQuery
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: EventQuery.upsertWithWhere
       parameters:
         - name: where
@@ -1288,7 +1362,9 @@ paths:
     post:
       tags:
         - EventQuery
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: EventQuery.replaceById
       parameters:
         - name: id
@@ -1352,7 +1428,9 @@ paths:
     put:
       tags:
         - mqmd
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: mqmd.upsert__put_mqmds
       parameters:
         - name: data
@@ -1371,7 +1449,9 @@ paths:
     patch:
       tags:
         - mqmd
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: mqmd.upsert__patch_mqmds
       parameters:
         - name: data
@@ -1411,7 +1491,9 @@ paths:
     post:
       tags:
         - mqmd
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: mqmd.replaceOrCreate
       parameters:
         - name: data
@@ -1431,7 +1513,9 @@ paths:
     post:
       tags:
         - mqmd
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: mqmd.upsertWithWhere
       parameters:
         - name: where
@@ -1542,7 +1626,9 @@ paths:
     put:
       tags:
         - mqmd
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'mqmd.prototype.updateAttributes__put_mqmds_{id}'
       parameters:
         - name: data
@@ -1567,7 +1653,9 @@ paths:
     patch:
       tags:
         - mqmd
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'mqmd.prototype.updateAttributes__patch_mqmds_{id}'
       parameters:
         - name: data
@@ -1593,7 +1681,9 @@ paths:
     post:
       tags:
         - mqmd
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: mqmd.replaceById
       parameters:
         - name: id
@@ -1712,7 +1802,9 @@ paths:
     put:
       tags:
         - iib-threadStats
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-threadStats.upsert__put_iib-threadStats
       parameters:
         - name: data
@@ -1731,7 +1823,9 @@ paths:
     patch:
       tags:
         - iib-threadStats
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-threadStats.upsert__patch_iib-threadStats
       parameters:
         - name: data
@@ -1771,7 +1865,9 @@ paths:
     post:
       tags:
         - iib-threadStats
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: iib-threadStats.replaceOrCreate
       parameters:
         - name: data
@@ -1791,7 +1887,9 @@ paths:
     post:
       tags:
         - iib-threadStats
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: iib-threadStats.upsertWithWhere
       parameters:
         - name: where
@@ -1902,7 +2000,9 @@ paths:
     put:
       tags:
         - iib-threadStats
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-threadStats.prototype.updateAttributes__put_iib-threadStats_{id}'
       parameters:
         - name: data
@@ -1927,7 +2027,9 @@ paths:
     patch:
       tags:
         - iib-threadStats
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-threadStats.prototype.updateAttributes__patch_iib-threadStats_{id}'
       parameters:
         - name: data
@@ -1953,7 +2055,9 @@ paths:
     post:
       tags:
         - iib-threadStats
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: iib-threadStats.replaceById
       parameters:
         - name: id
@@ -2072,7 +2176,9 @@ paths:
     put:
       tags:
         - iib-terminalStats
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-terminalStats.upsert__put_iib-terminalStats
       parameters:
         - name: data
@@ -2091,7 +2197,9 @@ paths:
     patch:
       tags:
         - iib-terminalStats
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-terminalStats.upsert__patch_iib-terminalStats
       parameters:
         - name: data
@@ -2131,7 +2239,9 @@ paths:
     post:
       tags:
         - iib-terminalStats
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: iib-terminalStats.replaceOrCreate
       parameters:
         - name: data
@@ -2151,7 +2261,9 @@ paths:
     post:
       tags:
         - iib-terminalStats
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: iib-terminalStats.upsertWithWhere
       parameters:
         - name: where
@@ -2262,7 +2374,9 @@ paths:
     put:
       tags:
         - iib-terminalStats
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-terminalStats.prototype.updateAttributes__put_iib-terminalStats_{id}'
       parameters:
         - name: data
@@ -2287,8 +2401,11 @@ paths:
     patch:
       tags:
         - iib-terminalStats
-      summary: Patch attributes for a model instance and persist it into the data source.
-      operationId: 'iib-terminalStats.prototype.updateAttributes__patch_iib-terminalStats_{id}'
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: >-
+        iib-terminalStats.prototype.updateAttributes__patch_iib-terminalStats_{id}
       parameters:
         - name: data
           in: body
@@ -2313,7 +2430,9 @@ paths:
     post:
       tags:
         - iib-terminalStats
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: iib-terminalStats.replaceById
       parameters:
         - name: id
@@ -2432,7 +2551,9 @@ paths:
     put:
       tags:
         - iib-serverInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-serverInfo.upsert__put_iib-serverInfos
       parameters:
         - name: data
@@ -2451,7 +2572,9 @@ paths:
     patch:
       tags:
         - iib-serverInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-serverInfo.upsert__patch_iib-serverInfos
       parameters:
         - name: data
@@ -2491,7 +2614,9 @@ paths:
     post:
       tags:
         - iib-serverInfo
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: iib-serverInfo.replaceOrCreate
       parameters:
         - name: data
@@ -2511,7 +2636,9 @@ paths:
     post:
       tags:
         - iib-serverInfo
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: iib-serverInfo.upsertWithWhere
       parameters:
         - name: where
@@ -2622,7 +2749,9 @@ paths:
     put:
       tags:
         - iib-serverInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-serverInfo.prototype.updateAttributes__put_iib-serverInfos_{id}'
       parameters:
         - name: data
@@ -2647,7 +2776,9 @@ paths:
     patch:
       tags:
         - iib-serverInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-serverInfo.prototype.updateAttributes__patch_iib-serverInfos_{id}'
       parameters:
         - name: data
@@ -2673,7 +2804,9 @@ paths:
     post:
       tags:
         - iib-serverInfo
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: iib-serverInfo.replaceById
       parameters:
         - name: id
@@ -2792,7 +2925,9 @@ paths:
     put:
       tags:
         - iib-nodeStats
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-nodeStats.upsert__put_iib-nodeStats
       parameters:
         - name: data
@@ -2811,7 +2946,9 @@ paths:
     patch:
       tags:
         - iib-nodeStats
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-nodeStats.upsert__patch_iib-nodeStats
       parameters:
         - name: data
@@ -2851,7 +2988,9 @@ paths:
     post:
       tags:
         - iib-nodeStats
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: iib-nodeStats.replaceOrCreate
       parameters:
         - name: data
@@ -2871,7 +3010,9 @@ paths:
     post:
       tags:
         - iib-nodeStats
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: iib-nodeStats.upsertWithWhere
       parameters:
         - name: where
@@ -2982,7 +3123,9 @@ paths:
     put:
       tags:
         - iib-nodeStats
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-nodeStats.prototype.updateAttributes__put_iib-nodeStats_{id}'
       parameters:
         - name: data
@@ -3007,7 +3150,9 @@ paths:
     patch:
       tags:
         - iib-nodeStats
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-nodeStats.prototype.updateAttributes__patch_iib-nodeStats_{id}'
       parameters:
         - name: data
@@ -3033,7 +3178,9 @@ paths:
     post:
       tags:
         - iib-nodeStats
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: iib-nodeStats.replaceById
       parameters:
         - name: id
@@ -3152,7 +3299,9 @@ paths:
     put:
       tags:
         - iib-nodeInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-nodeInfo.upsert__put_iib-nodeInfos
       parameters:
         - name: data
@@ -3171,7 +3320,9 @@ paths:
     patch:
       tags:
         - iib-nodeInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-nodeInfo.upsert__patch_iib-nodeInfos
       parameters:
         - name: data
@@ -3211,7 +3362,9 @@ paths:
     post:
       tags:
         - iib-nodeInfo
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: iib-nodeInfo.replaceOrCreate
       parameters:
         - name: data
@@ -3231,7 +3384,9 @@ paths:
     post:
       tags:
         - iib-nodeInfo
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: iib-nodeInfo.upsertWithWhere
       parameters:
         - name: where
@@ -3342,7 +3497,9 @@ paths:
     put:
       tags:
         - iib-nodeInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-nodeInfo.prototype.updateAttributes__put_iib-nodeInfos_{id}'
       parameters:
         - name: data
@@ -3367,7 +3524,9 @@ paths:
     patch:
       tags:
         - iib-nodeInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-nodeInfo.prototype.updateAttributes__patch_iib-nodeInfos_{id}'
       parameters:
         - name: data
@@ -3393,7 +3552,9 @@ paths:
     post:
       tags:
         - iib-nodeInfo
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: iib-nodeInfo.replaceById
       parameters:
         - name: id
@@ -3512,7 +3673,9 @@ paths:
     put:
       tags:
         - iib-flowStats
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-flowStats.upsert__put_iib-flowStats
       parameters:
         - name: data
@@ -3531,7 +3694,9 @@ paths:
     patch:
       tags:
         - iib-flowStats
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-flowStats.upsert__patch_iib-flowStats
       parameters:
         - name: data
@@ -3571,7 +3736,9 @@ paths:
     post:
       tags:
         - iib-flowStats
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: iib-flowStats.replaceOrCreate
       parameters:
         - name: data
@@ -3591,7 +3758,9 @@ paths:
     post:
       tags:
         - iib-flowStats
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: iib-flowStats.upsertWithWhere
       parameters:
         - name: where
@@ -3702,7 +3871,9 @@ paths:
     put:
       tags:
         - iib-flowStats
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-flowStats.prototype.updateAttributes__put_iib-flowStats_{id}'
       parameters:
         - name: data
@@ -3727,7 +3898,9 @@ paths:
     patch:
       tags:
         - iib-flowStats
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-flowStats.prototype.updateAttributes__patch_iib-flowStats_{id}'
       parameters:
         - name: data
@@ -3753,7 +3926,9 @@ paths:
     post:
       tags:
         - iib-flowStats
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: iib-flowStats.replaceById
       parameters:
         - name: id
@@ -3872,7 +4047,9 @@ paths:
     put:
       tags:
         - iib-flowInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-flowInfo.upsert__put_iib-flowInfos
       parameters:
         - name: data
@@ -3891,7 +4068,9 @@ paths:
     patch:
       tags:
         - iib-flowInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-flowInfo.upsert__patch_iib-flowInfos
       parameters:
         - name: data
@@ -3931,7 +4110,9 @@ paths:
     post:
       tags:
         - iib-flowInfo
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: iib-flowInfo.replaceOrCreate
       parameters:
         - name: data
@@ -3951,7 +4132,9 @@ paths:
     post:
       tags:
         - iib-flowInfo
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: iib-flowInfo.upsertWithWhere
       parameters:
         - name: where
@@ -4062,7 +4245,9 @@ paths:
     put:
       tags:
         - iib-flowInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-flowInfo.prototype.updateAttributes__put_iib-flowInfos_{id}'
       parameters:
         - name: data
@@ -4087,7 +4272,9 @@ paths:
     patch:
       tags:
         - iib-flowInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-flowInfo.prototype.updateAttributes__patch_iib-flowInfos_{id}'
       parameters:
         - name: data
@@ -4113,7 +4300,9 @@ paths:
     post:
       tags:
         - iib-flowInfo
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: iib-flowInfo.replaceById
       parameters:
         - name: id
@@ -4232,7 +4421,9 @@ paths:
     put:
       tags:
         - iib-eventData
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-eventData.upsert__put_iib-eventData
       parameters:
         - name: data
@@ -4251,7 +4442,9 @@ paths:
     patch:
       tags:
         - iib-eventData
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-eventData.upsert__patch_iib-eventData
       parameters:
         - name: data
@@ -4291,7 +4484,9 @@ paths:
     post:
       tags:
         - iib-eventData
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: iib-eventData.replaceOrCreate
       parameters:
         - name: data
@@ -4311,7 +4506,9 @@ paths:
     post:
       tags:
         - iib-eventData
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: iib-eventData.upsertWithWhere
       parameters:
         - name: where
@@ -4422,7 +4619,9 @@ paths:
     put:
       tags:
         - iib-eventData
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-eventData.prototype.updateAttributes__put_iib-eventData_{id}'
       parameters:
         - name: data
@@ -4447,7 +4646,9 @@ paths:
     patch:
       tags:
         - iib-eventData
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-eventData.prototype.updateAttributes__patch_iib-eventData_{id}'
       parameters:
         - name: data
@@ -4473,7 +4674,9 @@ paths:
     post:
       tags:
         - iib-eventData
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: iib-eventData.replaceById
       parameters:
         - name: id
@@ -4592,7 +4795,9 @@ paths:
     put:
       tags:
         - iib-brokerInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-brokerInfo.upsert__put_iib-brokerInfos
       parameters:
         - name: data
@@ -4611,7 +4816,9 @@ paths:
     patch:
       tags:
         - iib-brokerInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-brokerInfo.upsert__patch_iib-brokerInfos
       parameters:
         - name: data
@@ -4651,7 +4858,9 @@ paths:
     post:
       tags:
         - iib-brokerInfo
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: iib-brokerInfo.replaceOrCreate
       parameters:
         - name: data
@@ -4671,7 +4880,9 @@ paths:
     post:
       tags:
         - iib-brokerInfo
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: iib-brokerInfo.upsertWithWhere
       parameters:
         - name: where
@@ -4782,7 +4993,9 @@ paths:
     put:
       tags:
         - iib-brokerInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-brokerInfo.prototype.updateAttributes__put_iib-brokerInfos_{id}'
       parameters:
         - name: data
@@ -4807,7 +5020,9 @@ paths:
     patch:
       tags:
         - iib-brokerInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-brokerInfo.prototype.updateAttributes__patch_iib-brokerInfos_{id}'
       parameters:
         - name: data
@@ -4833,7 +5048,9 @@ paths:
     post:
       tags:
         - iib-brokerInfo
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: iib-brokerInfo.replaceById
       parameters:
         - name: id
@@ -4952,7 +5169,9 @@ paths:
     put:
       tags:
         - iib-Catalog
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-Catalog.upsert__put_iib-Catalogs
       parameters:
         - name: data
@@ -4971,7 +5190,9 @@ paths:
     patch:
       tags:
         - iib-Catalog
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: iib-Catalog.upsert__patch_iib-Catalogs
       parameters:
         - name: data
@@ -5011,7 +5232,9 @@ paths:
     post:
       tags:
         - iib-Catalog
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: iib-Catalog.replaceOrCreate
       parameters:
         - name: data
@@ -5031,7 +5254,9 @@ paths:
     post:
       tags:
         - iib-Catalog
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: iib-Catalog.upsertWithWhere
       parameters:
         - name: where
@@ -5142,7 +5367,9 @@ paths:
     put:
       tags:
         - iib-Catalog
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-Catalog.prototype.updateAttributes__put_iib-Catalogs_{id}'
       parameters:
         - name: data
@@ -5167,7 +5394,9 @@ paths:
     patch:
       tags:
         - iib-Catalog
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'iib-Catalog.prototype.updateAttributes__patch_iib-Catalogs_{id}'
       parameters:
         - name: data
@@ -5193,7 +5422,9 @@ paths:
     post:
       tags:
         - iib-Catalog
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: iib-Catalog.replaceById
       parameters:
         - name: id
@@ -5312,7 +5543,9 @@ paths:
     put:
       tags:
         - exchStack
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchStack.upsert__put_exchStacks
       parameters:
         - name: data
@@ -5331,7 +5564,9 @@ paths:
     patch:
       tags:
         - exchStack
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchStack.upsert__patch_exchStacks
       parameters:
         - name: data
@@ -5371,7 +5606,9 @@ paths:
     post:
       tags:
         - exchStack
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: exchStack.replaceOrCreate
       parameters:
         - name: data
@@ -5391,7 +5628,9 @@ paths:
     post:
       tags:
         - exchStack
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: exchStack.upsertWithWhere
       parameters:
         - name: where
@@ -5502,7 +5741,9 @@ paths:
     put:
       tags:
         - exchStack
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchStack.prototype.updateAttributes__put_exchStacks_{id}'
       parameters:
         - name: data
@@ -5527,7 +5768,9 @@ paths:
     patch:
       tags:
         - exchStack
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchStack.prototype.updateAttributes__patch_exchStacks_{id}'
       parameters:
         - name: data
@@ -5553,7 +5796,9 @@ paths:
     post:
       tags:
         - exchStack
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: exchStack.replaceById
       parameters:
         - name: id
@@ -5672,7 +5917,9 @@ paths:
     put:
       tags:
         - exchReQueue
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchReQueue.upsert__put_exchReQueues
       parameters:
         - name: data
@@ -5691,7 +5938,9 @@ paths:
     patch:
       tags:
         - exchReQueue
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchReQueue.upsert__patch_exchReQueues
       parameters:
         - name: data
@@ -5731,7 +5980,9 @@ paths:
     post:
       tags:
         - exchReQueue
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: exchReQueue.replaceOrCreate
       parameters:
         - name: data
@@ -5751,7 +6002,9 @@ paths:
     post:
       tags:
         - exchReQueue
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: exchReQueue.upsertWithWhere
       parameters:
         - name: where
@@ -5862,7 +6115,9 @@ paths:
     put:
       tags:
         - exchReQueue
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchReQueue.prototype.updateAttributes__put_exchReQueues_{id}'
       parameters:
         - name: data
@@ -5887,7 +6142,9 @@ paths:
     patch:
       tags:
         - exchReQueue
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchReQueue.prototype.updateAttributes__patch_exchReQueues_{id}'
       parameters:
         - name: data
@@ -5913,7 +6170,9 @@ paths:
     post:
       tags:
         - exchReQueue
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: exchReQueue.replaceById
       parameters:
         - name: id
@@ -6032,7 +6291,9 @@ paths:
     put:
       tags:
         - exchParm
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchParm.upsert__put_exchParms
       parameters:
         - name: data
@@ -6051,7 +6312,9 @@ paths:
     patch:
       tags:
         - exchParm
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchParm.upsert__patch_exchParms
       parameters:
         - name: data
@@ -6091,7 +6354,9 @@ paths:
     post:
       tags:
         - exchParm
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: exchParm.replaceOrCreate
       parameters:
         - name: data
@@ -6111,7 +6376,9 @@ paths:
     post:
       tags:
         - exchParm
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: exchParm.upsertWithWhere
       parameters:
         - name: where
@@ -6222,7 +6489,9 @@ paths:
     put:
       tags:
         - exchParm
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchParm.prototype.updateAttributes__put_exchParms_{id}'
       parameters:
         - name: data
@@ -6247,7 +6516,9 @@ paths:
     patch:
       tags:
         - exchParm
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchParm.prototype.updateAttributes__patch_exchParms_{id}'
       parameters:
         - name: data
@@ -6273,7 +6544,9 @@ paths:
     post:
       tags:
         - exchParm
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: exchParm.replaceById
       parameters:
         - name: id
@@ -6392,7 +6665,9 @@ paths:
     put:
       tags:
         - exchDump
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchDump.upsert__put_exchDumps
       parameters:
         - name: data
@@ -6411,7 +6686,9 @@ paths:
     patch:
       tags:
         - exchDump
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchDump.upsert__patch_exchDumps
       parameters:
         - name: data
@@ -6451,7 +6728,9 @@ paths:
     post:
       tags:
         - exchDump
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: exchDump.replaceOrCreate
       parameters:
         - name: data
@@ -6471,7 +6750,9 @@ paths:
     post:
       tags:
         - exchDump
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: exchDump.upsertWithWhere
       parameters:
         - name: where
@@ -6582,7 +6863,9 @@ paths:
     put:
       tags:
         - exchDump
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchDump.prototype.updateAttributes__put_exchDumps_{id}'
       parameters:
         - name: data
@@ -6607,7 +6890,9 @@ paths:
     patch:
       tags:
         - exchDump
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchDump.prototype.updateAttributes__patch_exchDumps_{id}'
       parameters:
         - name: data
@@ -6633,7 +6918,9 @@ paths:
     post:
       tags:
         - exchDump
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: exchDump.replaceById
       parameters:
         - name: id
@@ -6752,7 +7039,9 @@ paths:
     put:
       tags:
         - exchApplication
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchApplication.upsert__put_exchApplications
       parameters:
         - name: data
@@ -6771,7 +7060,9 @@ paths:
     patch:
       tags:
         - exchApplication
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchApplication.upsert__patch_exchApplications
       parameters:
         - name: data
@@ -6811,7 +7102,9 @@ paths:
     post:
       tags:
         - exchApplication
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: exchApplication.replaceOrCreate
       parameters:
         - name: data
@@ -6831,7 +7124,9 @@ paths:
     post:
       tags:
         - exchApplication
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: exchApplication.upsertWithWhere
       parameters:
         - name: where
@@ -6942,7 +7237,9 @@ paths:
     put:
       tags:
         - exchApplication
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchApplication.prototype.updateAttributes__put_exchApplications_{id}'
       parameters:
         - name: data
@@ -6967,7 +7264,9 @@ paths:
     patch:
       tags:
         - exchApplication
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchApplication.prototype.updateAttributes__patch_exchApplications_{id}'
       parameters:
         - name: data
@@ -6993,7 +7292,9 @@ paths:
     post:
       tags:
         - exchApplication
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: exchApplication.replaceById
       parameters:
         - name: id
@@ -7112,7 +7413,9 @@ paths:
     put:
       tags:
         - exchAppHeader
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchAppHeader.upsert__put_exchAppHeaders
       parameters:
         - name: data
@@ -7131,7 +7434,9 @@ paths:
     patch:
       tags:
         - exchAppHeader
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exchAppHeader.upsert__patch_exchAppHeaders
       parameters:
         - name: data
@@ -7171,7 +7476,9 @@ paths:
     post:
       tags:
         - exchAppHeader
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: exchAppHeader.replaceOrCreate
       parameters:
         - name: data
@@ -7191,7 +7498,9 @@ paths:
     post:
       tags:
         - exchAppHeader
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: exchAppHeader.upsertWithWhere
       parameters:
         - name: where
@@ -7302,7 +7611,9 @@ paths:
     put:
       tags:
         - exchAppHeader
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchAppHeader.prototype.updateAttributes__put_exchAppHeaders_{id}'
       parameters:
         - name: data
@@ -7327,7 +7638,9 @@ paths:
     patch:
       tags:
         - exchAppHeader
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exchAppHeader.prototype.updateAttributes__patch_exchAppHeaders_{id}'
       parameters:
         - name: data
@@ -7353,7 +7666,9 @@ paths:
     post:
       tags:
         - exchAppHeader
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: exchAppHeader.replaceById
       parameters:
         - name: id
@@ -7472,7 +7787,9 @@ paths:
     put:
       tags:
         - exch
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exch.upsert__put_exches
       parameters:
         - name: data
@@ -7491,7 +7808,9 @@ paths:
     patch:
       tags:
         - exch
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exch.upsert__patch_exches
       parameters:
         - name: data
@@ -7531,7 +7850,9 @@ paths:
     post:
       tags:
         - exch
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: exch.replaceOrCreate
       parameters:
         - name: data
@@ -7551,7 +7872,9 @@ paths:
     post:
       tags:
         - exch
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: exch.upsertWithWhere
       parameters:
         - name: where
@@ -7662,7 +7985,9 @@ paths:
     put:
       tags:
         - exch
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exch.prototype.updateAttributes__put_exches_{id}'
       parameters:
         - name: data
@@ -7687,7 +8012,9 @@ paths:
     patch:
       tags:
         - exch
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exch.prototype.updateAttributes__patch_exches_{id}'
       parameters:
         - name: data
@@ -7713,7 +8040,9 @@ paths:
     post:
       tags:
         - exch
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: exch.replaceById
       parameters:
         - name: id
@@ -7832,7 +8161,9 @@ paths:
     put:
       tags:
         - exccatExcParm
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exccatExcParm.upsert__put_exccatExcParms
       parameters:
         - name: data
@@ -7851,7 +8182,9 @@ paths:
     patch:
       tags:
         - exccatExcParm
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exccatExcParm.upsert__patch_exccatExcParms
       parameters:
         - name: data
@@ -7891,7 +8224,9 @@ paths:
     post:
       tags:
         - exccatExcParm
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: exccatExcParm.replaceOrCreate
       parameters:
         - name: data
@@ -7911,7 +8246,9 @@ paths:
     post:
       tags:
         - exccatExcParm
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: exccatExcParm.upsertWithWhere
       parameters:
         - name: where
@@ -8022,7 +8359,9 @@ paths:
     put:
       tags:
         - exccatExcParm
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exccatExcParm.prototype.updateAttributes__put_exccatExcParms_{id}'
       parameters:
         - name: data
@@ -8047,7 +8386,9 @@ paths:
     patch:
       tags:
         - exccatExcParm
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exccatExcParm.prototype.updateAttributes__patch_exccatExcParms_{id}'
       parameters:
         - name: data
@@ -8073,7 +8414,9 @@ paths:
     post:
       tags:
         - exccatExcParm
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: exccatExcParm.replaceById
       parameters:
         - name: id
@@ -8192,7 +8535,9 @@ paths:
     put:
       tags:
         - exccatExc
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exccatExc.upsert__put_exccatExcs
       parameters:
         - name: data
@@ -8211,7 +8556,9 @@ paths:
     patch:
       tags:
         - exccatExc
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: exccatExc.upsert__patch_exccatExcs
       parameters:
         - name: data
@@ -8251,7 +8598,9 @@ paths:
     post:
       tags:
         - exccatExc
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: exccatExc.replaceOrCreate
       parameters:
         - name: data
@@ -8271,7 +8620,9 @@ paths:
     post:
       tags:
         - exccatExc
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: exccatExc.upsertWithWhere
       parameters:
         - name: where
@@ -8382,7 +8733,9 @@ paths:
     put:
       tags:
         - exccatExc
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exccatExc.prototype.updateAttributes__put_exccatExcs_{id}'
       parameters:
         - name: data
@@ -8407,7 +8760,9 @@ paths:
     patch:
       tags:
         - exccatExc
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'exccatExc.prototype.updateAttributes__patch_exccatExcs_{id}'
       parameters:
         - name: data
@@ -8433,7 +8788,9 @@ paths:
     post:
       tags:
         - exccatExc
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: exccatExc.replaceById
       parameters:
         - name: id
@@ -8552,7 +8909,9 @@ paths:
     put:
       tags:
         - eventRenderer
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: eventRenderer.upsert__put_eventRenderers
       parameters:
         - name: data
@@ -8571,7 +8930,9 @@ paths:
     patch:
       tags:
         - eventRenderer
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: eventRenderer.upsert__patch_eventRenderers
       parameters:
         - name: data
@@ -8611,7 +8972,9 @@ paths:
     post:
       tags:
         - eventRenderer
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: eventRenderer.replaceOrCreate
       parameters:
         - name: data
@@ -8631,7 +8994,9 @@ paths:
     post:
       tags:
         - eventRenderer
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: eventRenderer.upsertWithWhere
       parameters:
         - name: where
@@ -8742,7 +9107,9 @@ paths:
     put:
       tags:
         - eventRenderer
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'eventRenderer.prototype.updateAttributes__put_eventRenderers_{id}'
       parameters:
         - name: data
@@ -8767,7 +9134,9 @@ paths:
     patch:
       tags:
         - eventRenderer
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'eventRenderer.prototype.updateAttributes__patch_eventRenderers_{id}'
       parameters:
         - name: data
@@ -8793,7 +9162,9 @@ paths:
     post:
       tags:
         - eventRenderer
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: eventRenderer.replaceById
       parameters:
         - name: id
@@ -8912,7 +9283,9 @@ paths:
     put:
       tags:
         - catInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: catInfo.upsert__put_catInfos
       parameters:
         - name: data
@@ -8931,7 +9304,9 @@ paths:
     patch:
       tags:
         - catInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: catInfo.upsert__patch_catInfos
       parameters:
         - name: data
@@ -8971,7 +9346,9 @@ paths:
     post:
       tags:
         - catInfo
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: catInfo.replaceOrCreate
       parameters:
         - name: data
@@ -8991,7 +9368,9 @@ paths:
     post:
       tags:
         - catInfo
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: catInfo.upsertWithWhere
       parameters:
         - name: where
@@ -9102,7 +9481,9 @@ paths:
     put:
       tags:
         - catInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'catInfo.prototype.updateAttributes__put_catInfos_{id}'
       parameters:
         - name: data
@@ -9127,7 +9508,9 @@ paths:
     patch:
       tags:
         - catInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'catInfo.prototype.updateAttributes__patch_catInfos_{id}'
       parameters:
         - name: data
@@ -9153,7 +9536,9 @@ paths:
     post:
       tags:
         - catInfo
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: catInfo.replaceById
       parameters:
         - name: id
@@ -9272,7 +9657,9 @@ paths:
     put:
       tags:
         - appQuery
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: appQuery.upsert__put_appQueries
       parameters:
         - name: data
@@ -9291,7 +9678,9 @@ paths:
     patch:
       tags:
         - appQuery
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: appQuery.upsert__patch_appQueries
       parameters:
         - name: data
@@ -9331,7 +9720,9 @@ paths:
     post:
       tags:
         - appQuery
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: appQuery.replaceOrCreate
       parameters:
         - name: data
@@ -9351,7 +9742,9 @@ paths:
     post:
       tags:
         - appQuery
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: appQuery.upsertWithWhere
       parameters:
         - name: where
@@ -9462,7 +9855,9 @@ paths:
     put:
       tags:
         - appQuery
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'appQuery.prototype.updateAttributes__put_appQueries_{id}'
       parameters:
         - name: data
@@ -9487,7 +9882,9 @@ paths:
     patch:
       tags:
         - appQuery
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'appQuery.prototype.updateAttributes__patch_appQueries_{id}'
       parameters:
         - name: data
@@ -9513,7 +9910,9 @@ paths:
     post:
       tags:
         - appQuery
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: appQuery.replaceById
       parameters:
         - name: id
@@ -9632,7 +10031,9 @@ paths:
     put:
       tags:
         - appInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: appInfo.upsert__put_appInfos
       parameters:
         - name: data
@@ -9651,7 +10052,9 @@ paths:
     patch:
       tags:
         - appInfo
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: appInfo.upsert__patch_appInfos
       parameters:
         - name: data
@@ -9691,7 +10094,9 @@ paths:
     post:
       tags:
         - appInfo
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: appInfo.replaceOrCreate
       parameters:
         - name: data
@@ -9711,7 +10116,9 @@ paths:
     post:
       tags:
         - appInfo
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: appInfo.upsertWithWhere
       parameters:
         - name: where
@@ -9822,7 +10229,9 @@ paths:
     put:
       tags:
         - appInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'appInfo.prototype.updateAttributes__put_appInfos_{id}'
       parameters:
         - name: data
@@ -9847,7 +10256,9 @@ paths:
     patch:
       tags:
         - appInfo
-      summary: Patch attributes for a model instance and persist it into the data source.
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
       operationId: 'appInfo.prototype.updateAttributes__patch_appInfos_{id}'
       parameters:
         - name: data
@@ -9873,7 +10284,9 @@ paths:
     post:
       tags:
         - appInfo
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: appInfo.replaceById
       parameters:
         - name: id
@@ -10012,7 +10425,9 @@ paths:
     put:
       tags:
         - ExceptionQuery
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: ExceptionQuery.upsert__put_ExceptionQueries
       parameters:
         - name: data
@@ -10031,7 +10446,9 @@ paths:
     patch:
       tags:
         - ExceptionQuery
-      summary: Patch an existing model instance or insert a new one into the data source.
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
       operationId: ExceptionQuery.upsert__patch_ExceptionQueries
       parameters:
         - name: data
@@ -10071,7 +10488,9 @@ paths:
     post:
       tags:
         - ExceptionQuery
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: ExceptionQuery.replaceOrCreate
       parameters:
         - name: data
@@ -10091,7 +10510,9 @@ paths:
     post:
       tags:
         - ExceptionQuery
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: ExceptionQuery.upsertWithWhere
       parameters:
         - name: where
@@ -10117,7 +10538,9 @@ paths:
     post:
       tags:
         - ExceptionQuery
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: ExceptionQuery.replaceById
       parameters:
         - name: id
@@ -10202,7 +10625,9 @@ paths:
     post:
       tags:
         - ExceptionMessage
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: ExceptionMessage.replaceOrCreate
       parameters:
         - name: data
@@ -10222,7 +10647,9 @@ paths:
     post:
       tags:
         - ExceptionMessage
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: ExceptionMessage.upsertWithWhere
       parameters:
         - name: where
@@ -10248,7 +10675,9 @@ paths:
     post:
       tags:
         - ExceptionMessage
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: ExceptionMessage.replaceById
       parameters:
         - name: id
@@ -10274,7 +10703,9 @@ paths:
     post:
       tags:
         - ExceptionDetails
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: ExceptionDetails.replaceOrCreate
       parameters:
         - name: data
@@ -10294,7 +10725,9 @@ paths:
     post:
       tags:
         - ExceptionDetails
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: ExceptionDetails.upsertWithWhere
       parameters:
         - name: where
@@ -10320,7 +10753,9 @@ paths:
     post:
       tags:
         - ExceptionDetails
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: ExceptionDetails.replaceById
       parameters:
         - name: id
@@ -10367,7 +10802,9 @@ paths:
     post:
       tags:
         - ExceptionCatalog
-      summary: Replace an existing model instance or insert a new one into the data source.
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
       operationId: ExceptionCatalog.replaceOrCreate
       parameters:
         - name: data
@@ -10387,7 +10824,9 @@ paths:
     post:
       tags:
         - ExceptionCatalog
-      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
       operationId: ExceptionCatalog.upsertWithWhere
       parameters:
         - name: where
@@ -10413,7 +10852,9 @@ paths:
     post:
       tags:
         - ExceptionCatalog
-      summary: Replace attributes for a model instance and persist it into the data source.
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
       operationId: ExceptionCatalog.replaceById
       parameters:
         - name: id
@@ -11494,9 +11935,12 @@ definitions:
 basePath: /api
 swagger: '2.0'
 info:
-  x-ibm-name: eeh-rest-api
   version: 1.0.1
-  title: eeh-rest-api
+  title: Eneterprise Exception Handler  API
+  description: Eneterprise Exception Handler  API
+  contact:
+    name: William Kersting
+    email: wtkersti@ncsu.edu
 schemes:
   - https
 host: $(catalog.host)
@@ -11531,7 +11975,8 @@ x-ibm-configuration:
   assembly:
     execute:
       - invoke:
-          target-url: 'https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com/eeh-rest-db/'
+          target-url: >-
+            https://01130372-63cd-4d23-9fc1-20e793f24eea-bluemix.cloudant.com/eeh-rest-db/
           username: rdifirseredurchediasedee
           password: 110ef6cd9129c1c3e12c17982f021a0d750916b0
           verb: keep
@@ -11551,3 +11996,7 @@ x-ibm-configuration:
       description: ''
       encoded: false
   gateway: datapower-gateway
+externalDocs:
+  description: Eneterprise Exception Handler  API
+  url: >-
+    https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Wfb0af2c6348e_4b4a_b630_02e3f6e9a35d/page/EEH%20Open%20Projects
