@@ -11974,7 +11974,8 @@ x-ibm-configuration:
         invoke-tls-profile: 'client:Loopback-client'
   properties:
     TARGET_HOST:
-      value: 'https://localhost:4001'
+      value: >-
+        https://apiconnect-7892f3b5-06d1-4f36-a924-f4f90e2ffead.rgupta1usibmcom-redbook.apic.mybluemix.net/
       description: ''
       encoded: false
     runtime-url:
@@ -11986,6 +11987,19 @@ x-ibm-configuration:
       description: ''
       encoded: false
   gateway: datapower-gateway
+  assembly:
+    execute:
+      - invoke:
+          title: invoke
+          timeout: 60
+          verb: keep
+          cache-response: protocol
+          cache-ttl: 900
+          stop-on-error:
+            - null
+          version: 1.0.0
+          target-url: $(TARGET_HOST)$(request.path)
+    catch: []
 externalDocs:
   description: Eneterprise Exception Handler  API
   url: >-

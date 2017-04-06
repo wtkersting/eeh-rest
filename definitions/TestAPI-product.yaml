@@ -1,9 +1,9 @@
 product: 1.0.0
 info:
-  name: eeh-rest
-  title: eeh-rest
-  version: 1.0.1
-  description: test api
+  name: ''
+  title: EEH-REST
+  version: 1.0.2
+  description: EEH API
   contact:
     name: bryan
     email: bechase2@ncsu.edu
@@ -19,24 +19,20 @@ visibility:
   subscribe:
     type: authenticated
 plans:
-  Platinum:
-    title: Platinum
+  platinum-plan:
+    title: Platinum Plan
     apis: {}
-    description: The best plan we offer
-    approval: true
-  Golden:
-    title: Golden Plan
+  gold-plan:
+    title: Gold Plan
     apis: {}
-    description: Our second best subscription
     rate-limits:
-      Calls:
-        value: 30/1minute
+      rate-limit:
+        value: 1000/1minute
         hard-limit: true
-    approval: true
-  default:
-    title: Default Plan
-    description: Default Plan
-    approval: false
-    rate-limit:
-      value: 100/hour
-      hard-limit: false
+  silver-plan:
+    title: Silver Plan
+    apis: {}
+    rate-limits:
+      rate-limit:
+        value: 100/1minute
+        hard-limit: true

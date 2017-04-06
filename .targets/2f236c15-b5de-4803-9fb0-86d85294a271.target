@@ -1,0 +1,75 @@
+type: bluemix
+server:
+  displayName: US South
+  name: us-south
+  host: us.apiconnect.ibmcloud.com
+org:
+  id: 58e580730cf2e2e1ff5bae49
+  name: rgupta1usibmcom-redbook
+  displayName: rgupta1@us.ibm.com (redbook)
+  orgType: apiProvider
+  status: active
+  advPortalOverride: true
+  extUaaAuthenticated: false
+  requiresSSLClientCertCheck: false
+  dormant: false
+  url: 'https://us.apiconnect.ibmcloud.com/v1/orgs/58e580730cf2e2e1ff5bae49'
+  externalOrgId: c269e684-20fb-4096-ae8b-4198cc6e9817
+  externalInviteOverride: 'https://console.ng.bluemix.net/apis/catalog/invitation'
+  externalSpaceId: c269e684-20fb-4096-ae8b-4198cc6e9817
+  externalNativeOrgId: bb202d52-0520-4d52-b485-c95919fe495d
+catalog:
+  id: 58e580740cf2e2e1ff5bae55
+  orgId: 58e580730cf2e2e1ff5bae49
+  name: Sandbox
+  shortName: sb
+  owner:
+    id: 573bcf710cf29a01c013c95c
+    username: rgupta1@us.ibm.com
+    context: apimanager
+    idpId: 58341db4e63b1219f0f068d1
+    email: rgupta1@us.ibm.com
+    firstName: Rahul Gupta
+    lastName: ''
+    status: ACTIVE
+    lastLoginTime: '2017-04-06T00:39:57.071+0000'
+    url: 'https://us.apiconnect.ibmcloud.com/v1/users/573bcf710cf29a01c013c95c'
+  apiCenter: false
+  baseUrl: 'https://api.us.apiconnect.ibmcloud.com/rgupta1usibmcom-redbook/sb'
+  portalType: BASIC
+  portalUrl: 'https://developer.us.apiconnect.ibmcloud.com/rgupta1usibmcom-redbook/sb'
+  advPortalUrl: 'https://sb-rgupta1usibmcom-redbook.developer.us.apiconnect.ibmcloud.com'
+  gatewayType: DataPowerGateway
+  idp: 58e580750cf2e2e1ff5bae56
+  idps:
+    - 58e580750cf2e2e1ff5bae56
+  availableRoles:
+    - developer
+    - viewer
+  default: false
+  autoDeploy: true
+  gatewayClusterUrl: /gatewayClusters/PRODAPIC_APIMGMT_GATEWAY
+  restrictedDeployment: false
+  invitationEnabled: true
+  selfSignUpEnabled: true
+  spaceEnabled: false
+  spaceIds:
+    - 58e580750cf2e2e1ff5bae5e
+  testAppEnabled: true
+  testAppCredentials:
+    clientId: 6e77ff89-40e2-4f25-a933-e0204bc31523
+    clientSecret: P1sA1oG7mP7bQ5kG2tN7lK0qW7wQ5xP0lU1xD5cP2dV5cU0xB7
+  createdAt: '2017-04-05T23:40:37.715+0000'
+  updatedAt: '2017-04-05T23:40:37.715+0000'
+  createdBy: apim-ops@wwpdl.vnet.ibm.com
+  updatedBy: apim-ops@wwpdl.vnet.ibm.com
+  url: >-
+    https://us.apiconnect.ibmcloud.com/v1/orgs/58e580730cf2e2e1ff5bae49/environments/58e580740cf2e2e1ff5bae55
+  productDeploymentApprovalRequiredStates: []
+  orgName: rgupta1usibmcom-redbook
+space:
+  none: true
+app:
+  none: true
+id: 2f236c15-b5de-4803-9fb0-86d85294a271
+target: 1.0.0

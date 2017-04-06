@@ -1,0 +1,29 @@
+type: bluemix
+server:
+  displayName: US South
+  name: us-south
+  host: us.apiconnect.ibmcloud.com
+org:
+  id: 58e580730cf2e2e1ff5bae49
+  name: rgupta1usibmcom-redbook
+  displayName: rgupta1@us.ibm.com (redbook)
+  orgType: apiProvider
+  status: active
+  advPortalOverride: true
+  extUaaAuthenticated: false
+  requiresSSLClientCertCheck: false
+  dormant: false
+  url: 'https://us.apiconnect.ibmcloud.com/v1/orgs/58e580730cf2e2e1ff5bae49'
+  externalOrgId: c269e684-20fb-4096-ae8b-4198cc6e9817
+  externalInviteOverride: 'https://console.ng.bluemix.net/apis/catalog/invitation'
+  externalSpaceId: c269e684-20fb-4096-ae8b-4198cc6e9817
+  externalNativeOrgId: bb202d52-0520-4d52-b485-c95919fe495d
+catalog:
+  none: true
+space:
+  none: true
+app:
+  new: true
+  name: eeh-rest-application
+id: df766996-9e9f-4321-b5db-9457a444794c
+target: 1.0.0
